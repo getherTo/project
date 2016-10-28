@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<select name="edu" id="edu" >
+    <option value="">--请选择--</option>
+    <option value="1">高中</option>
+    <option value="2">大专</option>
+    <option value="3">本科</option>
+    <option value="4">研究生</option>
+    <option value="5">其他</option>
+</select>
+<button type="button" onclick="getAll()">遍历下拉菜单</button>
+<br>
+<input type="text" name="name1" id="name1">
+<input type="text" name="name2" id="name2">
+<button type="button" onclick="addOption1()">增加选项-方法一</button>
+<button type="button" onclick="addOption2()">增加选项-方法二</button>
+<div id="result"></div>
+<script>
+
+    // 添加option 方法一 ，使用 new Option
+    function addOption1(){
+        var option_value = document.getElementById("name1").value;
+        var option_text = document.getElementById("name2").value;
+        var obj = document.getElementById("edu");
+        var option = new Option(option_text, option_value);
+        obj.options.add(option);
+        alert("添加成功！");
+    }
+
+    // 添加option 方法二  使用innerHTML
+    function addOption2(){
+        var option_value = document.getElementById("name1").value;
+        var option_text = document.getElementById("name2").value;
+        var obj = document.getElementById("edu");
+        obj.innerHTML += "<option value='" + option_value + "'>" + option_text + "</option>";
+        alert("添加成功！");
+    }
+
+    function getAll(){
+        var obj = document.getElementById("edu");
+        var html = "";
+        for( var i = 0; i < obj.length; i ++ ){
+            html += obj.options[i].value ;
+            html += " " ;
+            html += obj.options[i].text ;
+            html += " " ;
+            if( obj.options[i].selected ){
+                html += "选中" ;
+            } else {
+                html += "未选中" ;
+            }
+            html += "<br>" ;
+        }
+        document.getElementById("result").innerHTML = html;
+    }
+</script>
+
+</body>
+</html>

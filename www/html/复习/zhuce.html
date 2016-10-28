@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="" name="zhuce">
+    <table align="center">
+        <tr>
+        <td colspan="2"><h1>简历</h1></td>
+        </tr>
+        <tr>
+            <td><strong>姓名: &nbsp;&nbsp;&nbsp;</strong></td>
+            <td><input type="text" name="name" required placeholder="姓名" style="width: 150px"></td>
+        </tr>
+        <tr>
+            <td><strong>密码:</strong></td>
+            <td><input type="text" name="password" required placeholder="密码" style="width: 150px"></td>
+        </tr>
+        <tr>
+            <td><strong>性别:</strong></td>
+            <<td>
+            <label><input type="radio" name="sex" value="male">男</label>&nbsp;
+            <label><input type="radio" name="sex" value="female">女</label>&nbsp;
+        </tr>
+        <tr>
+            <td><strong>城市:</strong></td>
+            <td>
+                <select name="chengshi">
+                    <option value="1">-请选择-</option>
+                    <option value="2">泉州</option>
+                    <option value="3">广州</option>
+                    <option value="4">上海</option>
+                    <option value="5">合肥</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>简介:</strong></td>
+            <td>
+                <textarea name="eul" style="width:300px; height: 100px"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>兴趣:</strong></td>
+            <td>
+                <label><input type="checkbox" name="interesting[]" value="movie">看电影</label>&nbsp;
+                <label><input type="checkbox" name="interesting[]" value="ball">打球</label>&nbsp;
+                <label><input type="checkbox" name="interesting[]" value="swim">游泳</label>
+                <label><input type="checkbox" name="interesting[]" value="music">听音乐</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="提交">&nbsp;<input type="reset" value="重置"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

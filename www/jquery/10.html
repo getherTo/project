@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<div style="width:24px;height:32px;border:1px solid red;position:relative"></div>
+<button type="button" id="btn1">变大</button>
+<button type="button" id="btn2">变小</button>
+<button type="button" id="btn3">向右</button>
+<button type="button" id="btn4">向左</button>
+<script type="text/javascript">
+    $('#btn1').bind('click', function(){
+        $('div').animate({
+            width: '240px',
+            height: '320px'
+        }, 3000);
+    });
+    $('#btn2').bind('click', function(){
+        $('div').animate({
+            width: '24px',
+            height: '32px'
+        }, 3000);
+    });
+    $('#btn3').bind('click', function(){
+        $('div').animate({
+            left: '+=1000px'
+        }, 3000);
+    });
+    $('#btn4').bind('click', function(){
+        $('div').animate({
+            left: '-=1000px'
+        }, 3000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>表单提交javascript检查练习</h1>
+<form action="save.php" method="post" onsubmit="return check_submit()">
+    <table align="center" width="500" border="0" cellpadding="2" cellspacing="0">
+        <caption><h2>学员信息</h2></caption>
+
+        <tr>
+            <th>姓名：</th>
+            <td>
+                <input type="text" name="username" id="username" />
+                <span id="username_tips"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>性别：</th>
+            <td>
+                <div id="div_sex" style="display: inline-block">
+                    <input type="radio" name="sex" value="1" />男
+                    <input type="radio" name="sex" value="2" />女
+                    <input type="radio" name="sex" value="3" />保密
+                </div>
+                <span id="sex_tips"></span>
+            </td>
+        </tr>
+        <tr>
+            <th>学历：</th>
+            <td>
+                <select name="edu" id="edu" >
+                    <option value="">--请选择--</option>
+                    <option value="1">高中</option>
+                    <option value="2">大专</option>
+                    <option value="3">本科</option>
+                    <option value="4">研究生</option>
+                    <option value="5">其他</option>
+                </select>
+                <span id="edu_tips"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th>爱好：</th>
+            <td>
+                <div id="interesting_div" style="display: inline-block">
+                    <input type="checkbox" name="interesting[]" value="4">看电影
+                    <input type="checkbox" name="interesting[]" value="5">打球
+                    <input type="checkbox" name="interesting[]" value="6">游泳
+                    <input type="checkbox" name="interesting[]" value="7">听音乐
+                </div>
+                <span id="interesting_tips"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th>评价：</th>
+            <td>
+                <textarea name="eval" id="eval" rows="4" cols="40"></textarea>
+                <span id="eval_tips"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <td  align="left">
+                <input type="submit" name="submit" value="提交">
+                <input type="reset" name="reset" value="重置">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    function check_submit(){
+
+        // 检查表单项是否填写完整
+        var username = document.getElementById("username");
+        var edu = document.getElementById("edu");
+        var eval = document.getElementById("eval");
+
+        // sex 需要遍历写法
+        var sex_obj = document.getElementsByName("sex");
+        var sex_checked_flag = false; // 判断性别是否选中
+        for( var i = 0; i < sex_obj.length; i ++ ){
+            if( sex_obj[i].checked ){
+                sex_checked_flag = true;
+                break;
+            }
+        }
+
+        // interesting[]
+        var interesting_obj = document.getElementsByName("interesting[]");
+        var interesting_checked_flag = false; // 判断兴趣爱好是否选中
+        for( var i = 0; i < interesting_obj.length; i ++ ){
+            if( interesting_obj[i].checked ){
+                interesting_checked_flag = true;
+                break;
+            }
+        }
+
+        // 标志位，判断表单是否可以提交
+        var submit_flag = true;
+
+        // 检查用户名
+        if( username.value == "" ){
+            username.style.border = "1px solid red";
+            document.getElementById("username_tips").innerHTML = "<img src='icon/png_16x16/12.png'>";
+            document.getElementById("username_tips").innerHTML += "请输入姓名";
+            submit_flag = false;
+        } else{
+            username.style.border = "1px solid gray";
+            document.getElementById("username_tips").innerHTML = "";
+        }
+
+        // 检查性别
+        if( !sex_checked_flag ){
+            document.getElementById("div_sex").style.border = "1px solid red";
+            document.getElementById("sex_tips").innerHTML = "<img src='icon/png_16x16/12.png'>";
+            document.getElementById("sex_tips").innerHTML += "请输入姓名";
+            submit_flag = false;
+        } else{
+            document.getElementById("div_sex").style.border = "1px solid gray";
+            document.getElementById("sex_tips").innerHTML = "";
+        }
+
+        // 检查学历
+        if( edu.value == "" ){
+            edu.style.border = "1px solid red";
+            document.getElementById("edu_tips").innerHTML = "<img src='icon/png_16x16/12.png'>";
+            document.getElementById("edu_tips").innerHTML += "请选中学历";
+            submit_flag = false;
+        } else{
+            edu.style.border = "1px solid gray";
+            document.getElementById("edu_tips").innerHTML = "";
+        }
+
+        // 检查兴趣爱好
+        if( !interesting_checked_flag ){
+            document.getElementById("interesting_div").style.border = "1px solid red";
+            document.getElementById("interesting_tips").innerHTML = "<img src='icon/png_16x16/12.png'>";
+            document.getElementById("interesting_tips").innerHTML += "请选中兴趣爱好";
+            submit_flag = false;
+        } else{
+            document.getElementById("interesting_div").style.border = "1px solid gray";
+            document.getElementById("interesting_tips").innerHTML = "";
+        }
+
+        // 检查评价
+        if( eval.value == "" ){
+            eval.style.border = "1px solid red";
+            document.getElementById("eval_tips").innerHTML = "<img src='icon/png_16x16/12.png'>";
+            document.getElementById("eval_tips").innerHTML += "请选中学历";
+            submit_flag = false;
+        } else{
+            eval.style.border = "1px solid gray";
+            document.getElementById("eval_tips").innerHTML = "";
+        }
+        return submit_flag;
+    }
+</script>
+</body>
+</html>

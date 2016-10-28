@@ -1,0 +1,143 @@
+<!--
+<?php
+echo <<<EOT
+-->
+
+<div id="body">
+	<div id="daohang"><span>{$web['daohang']}</span></div>
+	<div id="listside">
+	<div class="sideblock">
+		<div class="title"><span>用户信息</span></div>
+		<div class="sidelogin">帐　　号：　{$user['name']}</div>
+		<div class="sidelogin">状　　态：　{$user['status']}</div>
+		<div class="sidelogin">注册I P ：　{$user['regip']}</div>
+		<div class="sidelogin">性　　别：　{$user['sex']}</div>
+		<div class="sidelogin">出生日期：　{$user['birthday']}</div>
+		<div class="sidelogin">Q　　　Q：　{$user['qq']}</div>
+		<div class="sidelogin">个人主页：<br/>　　{$user['homepage']}</div>
+		<div class="sidelogin">邮　　箱：<br/>　　{$user['email']}</div>
+		<div class="sidelogin">登陆时间 ：<br/>　　{$user['logintime']}</div>
+		<div class="sidelogin">最后活动时间：<br/>　　{$user['lasttime']}</div>
+		<div class="sidelogin">注册时间 ：<br/>　　{$user['regtime']}</div>
+		<div class="sidelogin">　　<a href="logout.php">退 出 登 陆</a></div>
+		<div class="bottom"><span></span></div>
+	</div>
+	</div>
+	<div id="listcontent">
+<!--
+EOT;
+if($action=="")
+echo <<<EOT
+-->
+		<form method="post" action="user.php?action=savechange2">
+		<div style="margin:10 50;">
+			<div style="margin:10 50;font-weight:bold;">以下资料完全保密</div>
+
+			<div style="padding:5px;">联系地址：<input type="text" name="address" id="address" value="{$user['address']}" size="60"/></div>
+
+			<div style="padding:5px;">邮政编码：<input type="text" name="postalcode" id="postalcode" value="{$user['postalcode']}" size="6"/></div>
+
+			<div style="padding:5px;">联系电话：<input type="text" name="telephone" id="telephone" value="{$user['telephone']}" size="12"/></div>
+
+			<div style="padding:5px;">联系手机：<input type="text" name="mobphone" id="mobphone" value="{$user['mobphone']}" size="12"/></div>
+
+			<div style="padding:5px;">真实姓名：<input type="text" name="truename" id="truename" value="{$user['truename']}" size="16"/></div>
+
+			<div style="padding:5px;text-align:center;"><input type="submit" value="修改以上资料"/>　　<a href="user.php?action=edit">修改其它资料</a></div>
+		</div>
+		</form>
+<!--
+EOT;
+if($action=="edit")
+echo <<<EOT
+-->
+
+		<form method="post" action="user.php?action=savechange1">
+
+		<div style="margin:10 60;font-weight:bold;">会员资料修改</div>
+
+		<div style="margin:10 40;">
+
+			<div style="margin:10 20;background:#ddd;padding:5;">修改以下信息必须要输入原先的密码</div>
+
+			<div style="padding: 5 5 5 40;">
+			会 员 名：{$user['name']}
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			旧 密 码：<input type="password" name="oldpassword" id="oldpassword"/> 此几栏为关键信息，须通过验证才能更改
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			邮　　箱：<input type="text" name="email" id="email" value="{$user['email']}"/>
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			新 密 码：<input type="password" name="password" id="password"/>	如不修改，请留空
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			重复密码：<input type="password" name="password2" id="password2"/> 如不修改，请留空
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			问　　题：<input type="text" name="clue" id="clue" value="{$uclue}"/> 忘记密码时可以回答问题找回密码
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			答　　案：<input type="text" name="answer" id="answer"/> 如不修改，请留空
+			</div>
+
+			<div style="margin:10 20;background:#ddd;padding:5;">以下为选填信息（修改下列信息可不输入原先的密码）</div>
+
+			<div style="padding:5 5 5 40;">
+			生　　日：<input type="text" name="uyear" id="uyear" size="4" value="{$uyear}"/>年
+				<input type="text" name="umonth" id="umonth" size="2" value="{$umonth}"/>月
+				<input type="text" name="uday" id="uday" size="2" value="{$uday}"/>日<br/>
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			性　　别：<input type="radio" name="sex" id="sex" value="0" {$usex0} style="border:0"/>保密
+				<input type="radio" name="sex" id="sex" value="1" {$usex1} style="border:0"/>男
+				<input type="radio" name="sex" id="sex" value="2" {$usex2} style="border:0"/> 女
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			&nbsp;Q　　Q ：<input type="text" name="oicq" id="oicq" value="{$user['qq']}"/>
+			</div>
+
+			<div style="padding:5 5 5 40;">
+			个人主页：<input type="text" name="homepage" id="homepage" value="{$user['homepage']}"/>
+			</div>
+
+			<div style="text-align:center;padding:5;">
+			<input type="submit" value="提交"/> 　
+			<input type="reset" value="重置"/>
+			</div>
+		</div>
+		</form>
+
+<!--
+EOT;
+if($action=="savechange1")
+echo <<<EOT
+-->
+		<div style="margin:10 200;border:3px outset #aaa;">
+			<div style="padding:5;background-color:aaf;">资料修改成功</div>
+			<div style="padding:20 30;"><a href="user.php?action=edit">点击返回上一页</a></div>
+
+		</div>
+
+<!--
+EOT;
+echo <<<EOT
+ -->
+
+	</div>
+	<div class="bodybottom"></div>
+</div>
+
+<!--
+EOT;
+?>
+-->

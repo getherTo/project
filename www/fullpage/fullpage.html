@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery全屏滚动 jQuery fullpage.js</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <style type="text/css">
+        .section {
+            text-align: center;
+            font-size: 30px
+        }
+
+        .section h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section"><img src="phone1.png"></div>
+    <div class="section">
+        <img src="phone1.png">
+    </div>
+    <div class="section">
+
+        <div class="slide"><img src="phone2-1.png"></div>
+        <div class="slide"><img src="phone2-2.png"></div>
+        <div class="slide"><img src="phone2-3.png"></div>
+        <div class="slide"><img src="phone2-4.png"></div>
+        <div class="slide"><img src="phone2-5.png"></div>
+
+    </div>
+    <div class="section">
+        <div class="slide"><img src="phone3-1.png"></div>
+        <div class="slide"><img src="phone3-2.png"></div>
+        <div class="slide"><img src="phone3-3.png"></div>
+        <div class="slide"><img src="phone3-4.png"></div>
+    </div>
+    <div class="section">
+        <div class="slide"><img src="phone4-1.png"></div>
+        <div class="slide"><img src="phone4-2.png"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#fullpage').fullpage({
+            sectionsColor: [],
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            css3: true,
+            'navigation': true,
+            'navigationPosition': 'right',
+            'navigationTooltips': ['概述', '极速闪冲', '性能', '相加'],
+            'slidesNavigation': true,
+            'slidesNavPosition': 'bottom',
+            'loopBottom': true,
+            'loopTop': true
+           /* afterLoad: function (anchorLink, index) {
+                console.log("afterLoad:anchorLink=" + anchorLink + ";index=" + index);
+            },
+            onLeave: function (index, nextIndex, direction) {
+                console.log("onLeave:index=" + index + ";nextIndex=" + nextIndex + ";direction=" + direction)
+            },
+            afterRender: function () {
+                console.log("afterRender");
+            }*/
+
+        });
+
+    });
+
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/vendors/jquery.easings.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/vendors/jquery.slimscroll.min.js"></script>
+
+</body>
+</html>

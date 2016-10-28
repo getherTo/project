@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="7.php" name="form1">
+<table border="1" cellspacing="0" cellpadding="0" width="1000" align="center">
+<caption><h1>个人简历</h1></caption>
+<tr align="center">
+    <td>姓名</td>
+    <td><input type="text" name="name" style="text-align: center" value="周鹏飞"/></td>
+    <td>性别</td>
+    <td width="60"><input type="radio" name="sex" value="male"/>男
+        <input type="radio" name="sex" value="female">女</td>
+    <td>出生年月</td>
+    <td><select name="yr">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+        </select>
+        <select name="mh">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select name="day">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select></td>
+    <td rowspan="3"><input type="file" name="pic" accept="image/gif">添加.gif格式</td>
+</tr>
+<tr align="center">
+    <td>身份证号码</td>
+    <td><input placeholder="身份证号码" type="text" name="card" value=""/>
+    </td>
+    <td>民族</td>
+    <td><select name="national">
+            <option value="汉">汉</option>
+            <option value="满">满</option>
+            <option value="壮">壮</option>
+            <option value="白">白</option>
+        </select></td>
+    <td>政治面貌</td>
+    <td><select name="zhengzhi">
+            <option value="党员">党员</option>
+            <option value="团员">团员</option>
+            <option value="群众">群众</option>
+        </select></td>
+</tr>
+<tr align="center">
+    <td>婚姻状况</td>
+    <td><select name="marriage">
+            <option value="未婚">未婚</option>
+            <option value="已婚">已婚</option>
+            <option value="离异">离异</option>
+        </select></td>
+    <td>健康状况</td>
+    <td><select name="health">
+            <option value="良">良</option>
+            <option value="好">好</option>
+            <option value="一般">一般</option>
+        </select></td>
+    <td>身高</td>
+    <td><input placeholder="单位cm" type="text" name="height" value="" style="text-align: center"></td>
+</tr>
+<tr align="center">
+    <td>现户口所在地</td>
+    <td><input placeholder="省市镇乡" type="text" name="registered" value="" style="text-align: center"></td>
+    <td>所学专业</td>
+    <td><input placeholder="系别" type="text" name="major" value="" style="text-align: center"></td>
+    <td>学历</td>
+    <td colspan="2"><select name="edu">
+            <option value="大学">大学</option>
+            <option value="高中">高中</option>
+            <option value="初中">初中</option>
+            <option value="小学">小学</option>
+        </select></td>
+</tr>
+<tr align="center">
+    <td height="40">毕业院校</td>
+    <td><input placeholder="院系" type="text" name="graduate" value="" style="text-align: center"></td>
+    <td>毕业时间</td>
+    <td><select name="ye">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+        </select>
+        <select name="mo">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select></td>
+    <td>技术职称</td>
+    <td colspan="2" name="te"><select>
+            <option value="初级">初级</option>
+            <option value="中级">中级</option>
+            <option value="高级">高级</option>
+        </select></td>
+</tr>
+<tr align="center">
+    <td rowspan="2">教<br>育<br>经<br>历</td>
+    <td colspan="2">起止年月</td>
+    <td colspan="2">在何单位或学校</td>
+    <td colspan="2">任何职务</td>
+</tr>
+<tr align="center">
+    <td colspan="2"><select name="year">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+        </select>
+        <select name="month">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>--<select name="ya">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+        </select>
+        <select name="mth">
+            <option value="选择" selected="selected">选择</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select></td>
+    <td colspan="2"><input placeholder="院系" type="text" name="educations" value="" style="text-align: center"></td>
+    <td colspan="2"><input placeholder="级别" type="text" name="educations" value="" style="text-align: center"></td>
+</tr>
+<tr align="center">
+    <td height="150">业务<br>专长<br>及<br>工作<br>成果</td>
+    <td colspan="6" ><textarea cols="80" rows="10" name="zhuanchang"></textarea></td>
+</tr>
+<tr align="center">
+    <td height="150">人<br>生<br>经<br>历</td>
+    <td colspan="6"><textarea cols="80" rows="10" name="miaoshu"></textarea></td>
+</tr>
+<tr align="center">
+    <td>通讯地址</td>
+    <td colspan="2"><input placeholder="市区街道" type="text" name="communication" value="" style="text-align: center"></td>
+    <td>邮政编码</td>
+    <td colspan="3"><input placeholder="******" type="text" name="postcode" value="" style="text-align: center"></td>
+</tr>
+<tr align="center">
+    <td height="40">手机号</td>
+    <td colspan="2"><input placeholder="******" type="text" name="phone" value="" style="text-align: center"></td>
+    <td>QQ号码</td>
+    <td colspan="3"><input placeholder="******" type="text" name="qq" value="" style="text-align: center"></td>
+</tr>
+</table>
+<input style="margin-left:600px" type="submit" name="submit" value="提交"/>&nbsp;&nbsp;&nbsp;<input type="reset" name="reset" value="重置">
+</form>
+</body>
+</html>

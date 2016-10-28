@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>新闻分类列表</title>
+</head>
+<body>
+<h1>新闻分类列表</h1>
+<h2><input type="button" onclick="adNews()" value="添加新闻分类"></h2>
+<table border="1" width="1000px">
+    <tr>
+        <th>新闻分类ID</th>
+        <th>分类名</th>
+        <th>操作</th>
+    </tr>
+    <volist name="news_category" id="news_category">
+        <tr>
+            <td>{$news_category.id}</td>
+            <td>{$news_category.name}</td>
+            <td>
+                <a href="/thinkphp_3.2.3/home/index/save/id/{$news_category.id}">编辑</a>&nbsp;
+                <a href="javascript:void(0)" onclick="del('{$news_category.id}')">删除</a>&nbsp;
+            </td>
+        </tr>
+    </volist>
+</table>
+<script>
+    function del( id  ){
+        if( confirm("您确定删除此新闻吗？") ){
+            document.location.href = "/thinkphp_3.2.3/home/index/delete/id/" + id ;
+        }
+    }
+    function adNews(){
+        document.location.href = "/thinkphp_3.2.3/my_admin/home/view/index/add.html" ;
+
+    }
+</script>
+</body>
+</html>

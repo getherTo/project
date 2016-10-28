@@ -1,0 +1,147 @@
+<!--
+<?php
+echo <<<EOT
+-->
+
+<div id="body">
+<!--
+EOT;
+if($action=="")
+echo <<<EOT
+ -->
+
+	<br/><br/><br/><br/>
+	<div style="margin:10 320;padding:30">
+		<form name="login" method="post" action="login.php?action=check" style="margin:0px;" onsubmit="return Checkuser();">
+		<div class="title"><span>用户登陆</span></div>
+		<div class="sidelogin">
+			用户名：<input type="text" name="username" id="username" size="16" />
+		</div>
+		<div class="sidelogin">
+			密　码：<input type="password" name="userpassword" id="userpassword" size="16" />
+		</div>
+		<div class="sidelogin">
+			有效期：<select name="time" id="time">
+				<option value="0" selected>不保存</option>
+				<option value="1">一天</option>
+				<option value="30">一个月</option>
+				<option value="365">一年</option>
+			</select>
+			<a href="login.php?action=find1">找回密码</a>
+		</div>
+		<div class="sidelogin">
+			<input type="submit" value="登陆"/>&nbsp;&nbsp;<input type="reset" value="重填"/>
+			&nbsp;<a href="reg.php">注册新用户</a>
+		</div>
+		<div class="bottom"><span></span></div>
+		</form>
+
+<script language='JavaScript' type='text/JavaScript'>
+function Checkuser(){
+	if (document.login.username.value==''){
+		alert('温馨提示！用户名不能为空！');
+		document.login.username.focus();
+	return false;
+	}
+	if (document.login.userpassword.value==''){
+		alert('温馨提示！请输入密码！');
+		document.login.userpassword.focus();
+		return false;
+	}
+	if(document.login.userpassword.value.length<6 || document.login.userpassword.value.length>32){
+		alert("温馨提示！密码要在 6-32 个字节！而您输入了 "+document.login.userpassword.value.length+" 个字节");
+		document.login.userpassword.value = "";
+		document.login.userpassword.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+	</div>
+	<br/><br/><br/><br/>
+<!--
+EOT;
+if($action=="find1")
+echo <<<EOT
+-->
+	<br/><br/><br/><br/>
+	<div style="margin:10 320;padding:30">
+		<form name="find1" method="post" action="login.php?action=find2" onsubmit="return checkname();">
+		<div class="title"><span>找回密码</span></div>
+		<div class="sidelogin">第一步：请输入您的帐号</div>
+		<div class="sidelogin">帐号：<input type="text" name="uname" id="uname" size="16"/></div>
+		<div class="sidelogin" style="text-align:center"><input type="submit" value="提交"/></div>
+		<div class="sidelogin">※　提示：<br/>用户最多可以用 五 次找回密码功能</div>
+		<div class="bottom"><span></span></div>
+		</form>
+	</div>
+	<br/><br/><br/><br/>
+	<script language='JavaScript' type='text/JavaScript'>
+	function checkname(){
+		if (document.find1.uname.value==''){
+			alert('温馨提示！用户名不能为空！');
+			document.find1.uname.focus();
+		return false;
+		}
+		return true;
+	}
+	</script>
+<!--
+EOT;
+if($action=="find2")
+echo <<<EOT
+-->
+	<br/><br/><br/><br/>
+	<div style="margin:10 320;padding:30">
+		<form name="find2" method="post" action="login.php?action=find3" onsubmit="return checkanswer();">
+		<div class="title"><span>找回密码</span></div>
+		<div class="sidelogin">第二步：请回答您预设好的问题</div>
+		<div class="sidelogin">帐号：{$uname}<input type="hidden" name="uname" id="uname" value="{$uname}"/></div>
+		<div class="sidelogin">问题：{$question}</div>
+		<div class="sidelogin">答案：<input type="text" name="answer" id="answer" size="16"/></div>
+		<div class="sidelogin" style="text-align:center"><input type="submit" value="提交"/></div>
+		<div class="sidelogin">※注：你是第 {$findnum} 次用这个功能</div>
+		<div class="bottom"><span></span></div>
+		</form>
+	</div>
+	<br/><br/><br/><br/>
+	<script language='JavaScript' type='text/JavaScript'>
+	function checkanswer(){
+		if (document.find2.answer.value==''){
+			alert('温馨提示！回答不能为空！');
+			document.find2.answer.focus();
+		return false;
+		}
+		return true;
+	}
+	</script>
+<!--
+EOT;
+if($action=="find3")
+echo <<<EOT
+-->
+
+	<br/><br/><br/><br/>
+	<div style="margin:10 320;padding:30">
+		<div class="title"><span>找回密码</span></div>
+		<div class="sidelogin">第三步：请修改您的密码</div>
+		<div class="sidelogin">帐号：{$uname}</div>
+		<div class="sidelogin">您的新密码为　请复制密码并登陆修改</div>
+		<div class="sidelogin"><input type="text" name="newpassword" id="newpassword" value="{$newpassword}" size="32"/></div>
+		<div class="sidelogin"><a href="login.php">请修改您的密码</a></div>
+		<div class="sidelogin">※　新密码由系统随机产生不定长度的字符，没有任何人工干预</div>
+		<div class="bottom"><span></span></div>
+	</div>
+	<br/><br/><br/><br/>
+
+<!--
+EOT;
+echo <<<EOT
+-->
+	<div class="bodybottom"></div>
+</div>
+
+<!--
+EOT;
+?>
+-->

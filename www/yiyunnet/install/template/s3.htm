@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>宜云网络网站管理系统安装程序</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="body">
+	<form action="index.php?step=4" method="post" name="form1">
+		<div class="boxtitle">
+			<span>最后一步：数据库设定</span>
+		</div>
+		<table width="726" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2">所有信息不能含有　单引号'，双引号"，分号;，左尖括号&lt;，右尖括号&gt;，返斜线\，和空格</td>
+			</tr>
+			<tr>
+				<td width="256"><strong>数据库主机：</strong></td>
+				<td width="468"><input name="dbhost" type="text" id="dbhost" value="localhost" style="width:200px" />
+					<small>一般为localhost</small>
+				</td>
+			</tr>
+			<tr>
+				<td><strong>数据库名称：</strong></td>
+				<td>
+					<input name="dbname" type="text" id="dbname" value="yiyunnet" style="width:200px" />
+				</td>
+			</tr>
+			<tr>
+				<td><strong>数据库用户名：</strong></td>
+				<td><input name="dbuser" type="text" id="dbuser" value="root" style="width:150px" /></td>
+			</tr>
+			<tr>
+				<td><strong>数据库密码：</strong></td>
+				<td><input name="dbpwd" type="text" id="dbpwd" style="width:150px"/></td>
+			</tr>
+			<tr>
+				<td><strong>数据表前缀：</strong></td>
+				<td><input name="dbpre" type="text" id="dbpre" value="yiyun_" style="width:200px" />
+					<small>如无特殊需要,请不要修改</small>
+				</td>
+			</tr>
+			<tr>
+				<td><strong>数据库编码：</strong></td>
+				<td>
+					<input name="dblang" type="radio" id="dblang" value="gbk" checked="checked" />GBK
+					<input type="radio" name="dblang" id="dblang" value="latin1" />LATIN1
+					&nbsp;&nbsp;
+					<small>一般选择GBK</small>
+				</td>
+			</tr>
+		</table>
+
+		<div class="boxtitle">
+			<span>管理员初始密码</span>
+		</div>
+
+		<table width="726" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="256"><strong>用户名：</strong></td>
+				<td width="468">
+					<input name="adminuser" type="text" id="adminuser" value="admin" style="width:200px" />
+				</td>
+			</tr>
+			<tr>
+				<td><strong>密　码：</strong></td>
+				<td>
+					<input name="adminpwd" type="text" id="adminpwd" value="adminyiyun" style="width:200px" />最少六位,不能有中文。
+					<p>这个用户名和密码作为超级管理员密码，请不要设置的太简单。</p>
+				</td>
+			</tr>
+		</table>
+
+		<div class="boxtitle">
+			<span>其他设置</span>
+		</div>
+
+		<table width="726" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td width="256"><strong>网站名称：</strong></td>
+				<td width="468">
+					<input name="webname" type="text" id="webname" value="我的网站" style="width:200px" />
+				</td>
+			</tr>
+			<tr>
+				<td><strong>管理员邮箱：</strong></td>
+				<td><input name="adminmail" type="text" id="adminmail" value="182824196@qq.com" style="width:200px" /></td>
+			</tr>
+			<tr>
+				<td><strong>网站安装目录：</strong></td>
+				<td><input name="cmspath" type="text" value="<?php echo $cmspath; ?>" id="cmspath" style="width:100px" />
+				<small>在根目录时为空，（一般程序会自动检测出来）</small></td>
+			</tr>
+		</table>
+		<div class="butbox boxcenter">
+			<input type="button" class="backbut" value="" onclick="history.back();" style="margin-right:20px" />
+			<input name="提交" type="submit" class="setupbut" value="" />
+		</div>
+	</form>
+</div>
+</body>
+</html>

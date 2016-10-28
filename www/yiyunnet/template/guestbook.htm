@@ -1,0 +1,53 @@
+<!--
+<?php
+echo <<<EOT
+-->
+
+<div id="body">
+<!--
+EOT;
+if($listmessage!="")
+echo <<<EOT
+-->
+	<div class="guesttitle">查看用户留言</div>
+	<div class="guestlist">{$listmessage}</div>
+	<div class="showpage">{$showpage}</div>
+<!--
+EOT;
+echo <<<EOT
+-->
+	<div class="guestform">
+		<div class="title"><span>我要留言</span></div>
+		<form name="guest" method="post" action="?action=save" onsubmit="return checkguest();" style="margin:0;">
+		<div class="guestform2">称　　呼：<input type="text" name="gname" id="gname" value="{$user['name']}" size="16"/>　* * *</div>
+		<div class="guestform2">邮　　箱：<input type="text" name="gmail" id="gmail" value="{$user['email']}" size="32"/></div>
+		<div class="guestform2">Q　　　Q：<input type="text" name="gqq" id="gqq" value="{$user['qq']}" size="10"/></div>
+		<div class="guestform2">个人网址：<input type="text" name="ghomepage" id="ghomepage" value="{$user['homepage']}" size="36"/></div>
+		<div class="guestform2">留言内容：* * *</div>
+		<div class="guestform2">　　　　　<textarea name="gcontent" id="gcontent" rows="10" cols="80"></textarea></div>
+		<div class="guestform2" style="text-align:center;"><input type="submit" value="提交"/> <input type="reset" value="重置"/></div>
+		</form>
+		<div class="bottom"><span></span></div>
+	</div>
+	<div class="bodybottom"></div>
+	<script language='JavaScript' type='text/JavaScript'>
+	function checkguest(){
+		if (document.guest.gname.value==''){
+			alert('温馨提示！称呼不能为空！');
+			document.guest.gname.focus();
+		return false;
+		}
+		if (document.guest.gcontent.value==''){
+			alert('温馨提示！内容不能为空！');
+			document.guest.gcontent.focus();
+		return false;
+		}
+		return true;
+	}
+	</script>
+</div>
+
+<!--
+EOT;
+?>
+-->

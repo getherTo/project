@@ -1,0 +1,408 @@
+[ 2016-10-09T09:10:32+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/index/qiye/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.067004s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:10:32+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/index/qiye/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:11:49+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/index/qiye/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:11:49+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/index/qiye/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/css/nav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/slide.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/jquery-1.7.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/nav.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/png.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/jquery.pack.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_left.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_right.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:15+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/59e0c54fd0415faa263636830324adde.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/slide.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/png.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016001s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_left.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/59e0c54fd0415faa263636830324adde.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:16+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_right.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/slide.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/png.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/nav.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/css/nav.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/jquery.pack.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/jquery-1.7.2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/nav.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/59e0c54fd0415faa263636830324adde.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_left.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_right.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/jquery.pack.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/slide.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/js/png.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_04.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_01.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/banner_02.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_right.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/59e0c54fd0415faa263636830324adde.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:54:26+08:00 ] 127.0.0.1 /thinkphp_3.2.3/Application/Home/View/__PUBLIC__/home/images/roll_left.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Application
+
+[ 2016-10-09T09:59:38+08:00 ] 127.0.0.1 /thinkphp_3.2.3/my_admin/home/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:My_admin
+
+[ 2016-10-09T10:32:03+08:00 ] 127.0.0.1 /thinkphp_3.2.3/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Flvplayer
+
+[ 2016-10-09T10:32:03+08:00 ] 127.0.0.1 /thinkphp_3.2.3/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Flvplayer
+
+[ 2016-10-09T10:32:09+08:00 ] 127.0.0.1 /thinkphp_3.2.3/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Flvplayer
+
+[ 2016-10-09T10:32:09+08:00 ] 127.0.0.1 /thinkphp_3.2.3/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Flvplayer
+
+[ 2016-10-09T10:32:10+08:00 ] 127.0.0.1 /thinkphp_3.2.3/guanyulantian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Guanyulantian
+
+[ 2016-10-09T10:32:17+08:00 ] 127.0.0.1 /thinkphp_3.2.3/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Flvplayer
+
+[ 2016-10-09T10:32:17+08:00 ] 127.0.0.1 /thinkphp_3.2.3/flvplayer.swf?file=ftp://218.28.100.165/HNLT-Fly.FLV&showfsbutton=true&autostart=false
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Flvplayer
+

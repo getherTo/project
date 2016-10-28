@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+小组：<select name="team_names" id="team_names" onchange="select_member(this.value)">
+    <option value="">分组</option>
+<script>
+var team_names = ['第1组','第2组','第3组','第4组','第5组','第6组' ];
+    for (var i = 0 ; i < team_names.length;i++){
+        document.write("<option value='" + i + "'>"+team_names[i]+"</option>");
+    }
+</script>
+</select>
+小组成员：<select id="member" name="member">
+    <option>-请选择-</option>
+</select>
+
+<script>
+    function select_member( index ){
+        if( index == "" ) {
+            document.getElementById('member').innerHTML = "";
+            return false;
+        }
+        var team1 = ['丁骁','黄舟','时伟伟','李建华', '樊瑞','吴延祥','周鹏飞', '邓科'];
+        var team2 = ['卢阳','刘青山','李路华','吴勇','高彦隆','邵刚','帅师','宣浩'];
+        var team3 = ['吴波','许兵','吴灿','李小平','张彪','窦和平','肖飞','王鲍'];
+        var team4 = ['蒋亚昆', '陈浩', '冯阳', '李亚回', '董亚南', '储进朝'];
+        var team5 = ['姜磊','梁竟萧','缪全龙','刘丹','符亲冉','李松','刘波','吴振杨'];
+        var team6 = ['张磊','杨征','方波','张钱隆','徐治达','张灿灿','陈子文','卜文俊'];
+        var all_teams = [team1, team2, team3, team4, team5, team6 ];
+        var option_html = "<option value=''>-请选择-</option>";
+        for( var i = 0; i < all_teams[index].length; i++){
+            option_html += "<option value='"+ all_teams[index][i] + "'>" +  all_teams[index][i] + "</option>"
+        }
+        document.getElementById('member').innerHTML = option_html;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+<?php
+echo <<<EOT
+-->
+
+<div id="body">
+	<div id="daohang"><span>{$web['daohang']}</span></div>
+	<div id="listside">
+		<div id="login">
+			{$logincode}
+			<div class="bottom"><span></span></div>
+		</div>
+		<div class="sideblock">
+			<div class="title"><span>推荐</span></div>
+			<div class="sidecontent">{$listvouch}</div>
+			<div class="bottom"><span></span></div>
+		</div>
+		<div class="sideblock">
+			<div class="title"><span>热门</span></div>
+			<div class="sidecontent">{$listhots}</div>
+			<div class="bottom"><span></span></div>
+		</div>
+		<div class="sideblock">
+			<div class="title"><span>相关</span></div>
+			<div class="sidecontent">{$kindred}</div>
+			<div class="bottom"><span></span></div>
+		</div>
+	</div>
+	<div id="listcontent">
+		<div class="benkeyword">{$keywordscode}</div>
+		{$bentitle}
+		<div class="beninfo">
+<!--
+EOT;
+if($benpropercode=="")
+echo <<<EOT
+-->
+		[ 录入者:{$benusername} | 时间:{$benposttime} | 作者:{$benauthor} | 来源:{$bencopyfrom} | 浏览:{$benhits}次 ]
+		【
+		<a onclick="bencontent.style.fontSize='19px';" href="#">大</a>
+		<a onclick="bencontent.style.fontSize='16px';" href="#">中</a>
+		<a onclick="bencontent.style.fontSize='12px';" href="#">小</a>
+		 】
+<!--
+EOT;
+echo <<<EOT
+-->
+		</div>
+		<div id="bencontent">{$bentitlepiccode}{$benpropercode}{$bencontent}</div>
+		<div class="showpage">{$showpage}</div>
+		<div class="lastpage">◎上一篇：{$lastpage}</div>
+		<div class="nextpage">◎下一篇：{$nextpage}</div>
+	</div>
+	<div class="bodybottom"></div>
+</div>
+
+<!--
+EOT;
+?>
+-->
+

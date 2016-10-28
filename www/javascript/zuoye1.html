@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<label><input type="checkbox" name="interesting[]" value="movie">看电影</label>
+<label><input type="checkbox" name="interesting[]" value="ball">打球</label>
+<label><input type="checkbox" name="interesting[]" value="swim">游泳</label>
+<label><input type="checkbox" name="interesting[]" value="music">听音乐</label>
+<button type="button" onclick="checkedAll()">全选</button>
+<button type="button" onclick="unchecked()">取消全选</button>
+<button type="button" onclick="InvertChecked()">反选</button>
+<script>
+
+    function checkedAll(){
+        var interesting = document.getElementsByName("interesting[]");
+        for ( var i = 0; i < interesting.length ; i ++ ){
+            interesting[i].checked = true;
+        }
+    }
+    function unchecked(){
+        var interesting = document.getElementsByName("interesting[]");
+        for ( var i = 0; i < interesting.length ; i ++ ){
+            interesting[i].checked = false;
+        }
+    }
+    function InvertChecked(){
+        var interesting = document.getElementsByName("interesting[]");
+        for ( var i = 0; i < interesting.length ; i ++ ){
+            interesting[i].checked = !interesting[i].checked;
+        }
+    }
+</script>
+</body>
+</html>

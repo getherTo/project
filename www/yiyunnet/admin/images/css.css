@@ -1,0 +1,112 @@
+body,td,div,form,p,select,input,textarea,option{font: 14px Arial,Tahoma,宋体,verdana;color:#000;}
+body{
+	margin:5;
+	padding: 0;
+	background-color:#f8f8ff;
+}
+table{
+	border:0;
+	border-collapse:collapse;
+}
+th{
+	font-size:14px;
+}
+a{
+	text-decoration:none;
+	color:000;
+}
+a:hover{
+	text-decoration:underline;
+	color:833;
+}
+input{
+	border:1px solid #888;
+}
+
+.lefttitle{
+	cursor:hand;
+	padding:4;
+	border-top:2px solid #eee;
+	border-right:2px solid #555;
+	border-bottom:2px solid #555;
+	border-left:2px solid #eee;
+	margin-top:2;
+}
+.leftsub{
+	border-right:2px solid #555;
+	border-bottom:2px solid #555;
+	border-left:2px solid #eee;
+	margin-bottom:5;
+	padding:1 3;
+}
+.firstsubdiv{
+	padding:3 0 3 5;
+	border-bottom:1px solid #777;
+}
+.subdiv{
+	padding:3 0 3 5;
+	border-top:1px solid #eee;
+	border-bottom:1px solid #777;
+}
+.lastsubdiv{
+	padding:3 0 3 5;
+	border-top:1px solid #eee;
+}
+
+#body{
+	margin: 0 10 0 10;
+	border:1px solid #888;
+	padding:5;
+	width:780;
+}
+
+.title{
+	text-align:center;
+	font-weight:bold;
+	background-image:url("admin_bg_1.gif");
+	padding:5;color:fff;
+}
+.formline{
+	padding:3px;
+	border-bottom:1px solid #ddd;
+}
+.help{
+	margin:2 20 2 30;padding-top:1px;
+	color:888;text-align:left;
+	border:1px solid #888;
+	background-color:#ff0;
+	font-size:9pt;
+}
+.inlinediv{
+	display:inline;
+}
+/*页号总体显示样式*/
+.showpage{
+	margin:2 30 2 30;
+	padding:20 10 6;
+	text-align:right;
+}
+/*页号中每个元素的样式*/
+.showpage span{
+	border:1px solid #888;
+	padding:2 8 2;
+	color:#f44;
+}
+.showpage a span{
+	color:#000;
+}
+.glistinfo{
+	background-color:#DDD;
+	padding:5px;
+}
+.glistinfo span{
+	padding-right:10px;
+}
+.glistcontent{
+	padding:5 10;
+}
+.glistreply{
+	border-top:1px dashed #aaa;
+	padding:5 0 10 10;
+}
+

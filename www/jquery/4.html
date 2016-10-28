@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src = jquery.js type="text/javascript"></script>
+    <style>
+        .selected_border {
+            border: 1px solid red;
+        }
+        .selected_element{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>jquery选择器练习</h1>
+
+<h1>hello jquery</h1>
+
+<form name="form1" id="form1" class="form1" action="" method="post">
+    <table name="table1" id="table1" class="table1" border="1px" width="600px">
+        <tr name="tr1" id="tr1" class="tr1">
+            <td name="td11" id="td11" class="td11" nowrap>
+                <input type="text" name="text11" id="text11" class="text11" value="text11"/>
+                <input type="button" name="button11" id="button11" class="button11" value="button11"/>
+            </td>
+            <td name="td12" id="td12" class="td12">
+                <input type="text" name="text12" id="text12" class="text12" value="text12"/>
+                <input type="hidden" name="hidden12" id="hidden12" class="hidden12" value="hidden12"/>
+            </td>
+            <td name="td13" id="td13" class="td13">
+                <input type="text" name="text13" id="text13" class="text13" value="text13"/>
+            </td>
+        </tr>
+        <tr name="tr2" id="tr2" class="tr2">
+            <td name="td21" id="td21" class="td21">
+                <input type="password" name="password21" id="password21" class="password21" value="password21"/>
+                <input type="radio" name="radio21" id="radio21" class="radio21" value="radio21" checked/>
+                <input type="checkbox" name="checkbox21" id="checkbox21" class="checkbox21" value="checkbox21" checked/>
+            </td>
+            <td name="td22" id="td22" class="td22" nowrap>
+                <input type="submit" name="submit22" id="submit22" class="submit22" value="submit22"/>
+                <br>
+                <input type="image" name="image22" id="image22" class="image22"
+                       src="/images/icon/system_icon/address_book_add_32.png"/>
+                <br>
+                <input type="reset" name="reset22" id="reset22" class="reset22" value="reset22"/>
+            </td>
+            <td name="td23" id="td23" class="td23">
+                <input type="file" name="file23" id="file23" class="file23" value="file23"/>
+            </td>
+        </tr>
+        <tr name="tr3" id="tr3" class="tr3">
+            <td name="td31" id="td31" class="td31">
+
+                <select name="select31" size="1">
+                    <option value="select311">option1</option>
+                    <option value="select312" selected>option2</option>
+                    <option value="select313">option3</option>
+                </select>
+
+            </td>
+            <td name="td32" id="td32" class="td32"></td>
+            <td name="td33" id="td33" class="td33"></td>
+        </tr>
+    </table>
+</form>
+<script type="text/javascript">
+// 获取所有td标签下的所有input子元素
+$("td :input").addClass("selected_border");
+// 获取第一个input元素
+$('input:first').addClass("selected_border");
+// 获取最后一个input元素
+$('input:last').addClass('selected_border');
+// 获取所有未被选中的input元素
+$('input[checked != checked]').addClass('selected_element');
+$('select[selected != selected]').addClass('selected_element');
+// 查找索引为1的input元素，索引值从0算起
+$('input:eq(1)').addClass('selected_border');
+//获取页面所有标题元素
+$("h1").css('color', 'red');
+//查找所有html内容含有"hello jquery"的h1元素
+$('h1:contains(hello jquery)').css('color', 'blue');
+//获取所有不含子标签或html内容为空的td元素
+$('').parent('td').css('color', 'red');
+//查找所有含有input子元素的td元素
+$('input').parent('td').css('color', 'red');
+//查找所有含有子标签或有html内容的td元素
+$('true').parent('td').css('color', 'red');
+//查找所有隐藏的input元素
+$('input:hidden').show('color', 'red');
+//查找所有可见的input元素
+$('input:visible').css('color', 'red');
+//查找所有含有id属性的input元素
+$('input[id=]');
+//查找name值为text11的input元素
+$('input[name = "text11"]').addClass('selected_border');
+//查找name值不等于text11的所有input元素
+$('input[name != "text11"]').addClass('selected_border');
+//查找name值以text开头的input元素
+$('input[name *= "text11"]').addClass('selected_border');
+//查找name值以11结尾的所有input元素
+$('input[name = "%11"]').addClass('selected_border');
+//查找name值中含有ext的所有input元素
+$('input[name *= "ext"]').addClass('selected_border');
+//查找所有含有id属性并且name值中含有ext的input元素
+
+//查找所有在父元素中的所有子元素中排第一的input元素
+$('input:first-child').addClass('selected_element');
+//查找所有在父元素中所有子元素中排最后一个的input元素
+$('input:last-child').addClass('selected_element');
+//查找所有在父元素中是唯一子元素的input元素
+
+//查找所有input元素
+$(":input").addClass('selected_element');
+
+//查找所有文本框元素
+$(":text").addClass('selected_element');
+
+//查找所有密码框元素
+$(":password").addClass('selected_element');
+
+//查找所有复选框
+$(":checkbox").addClass('selected_element');
+
+//查找所有提交按钮元素
+$(":submit").addClass('selected_element');
+
+//查找所有图像域元素
+$("").addClass('selected_element');
+
+//查找所有重置按钮元素
+$(":reset").addClass('selected_element');
+
+//查找所有按钮元素
+$(":button").addClass('selected_element');
+
+//查找所有文件域元素
+$(":file").addClass('selected_element');
+
+//查找所有可用的input元素
+//查找所有不可用的input元素
+//查找所有选中的单选复选框
+//查找所有选中的下拉框
+// 获取id为text11元素后面的class为button11元素，只获取一个符合条件的元素。text11与button11在地位上属于同级关系
+
+// 获取id为text11元素后面的所有class为button11的元素
+</script>
+</body>
+</html>

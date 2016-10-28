@@ -1,0 +1,175 @@
+<?php
+echo <<<EOT
+
+<div id="body">
+	<div id="indexside">
+	
+		<div id="login">
+			{$logincode}
+			<div class="bottom"><span></span></div>
+		</div>
+		
+		<div class="sideblock">
+			<div class="title"><span>公告</span></div>
+			<div class="sidecontent">
+				<marquee direction="up" scrolldelay="20" scrollamount="1" height="120" onMouseOver="this.stop();" onMouseOut="this.start();">
+				{$placardcode}
+				</marquee>
+			</div>
+			<div class="bottom"><span></span></div>
+		</div>
+		<div class="sideblock">
+			<div class="title"><span>最近更新</span></div>
+			<div class="sidecontent">
+				{$newupdatecode}
+			</div>
+			<div class="bottom"><span></span></div>
+		</div>
+		
+		<div class="sideblock">{$showvotecode}</div>
+			
+		<div class="sideblock">
+			<div class="title"><span>联系我们</span></div>
+			<div class="sidecontent">
+				姓名：{$web['webmaster']}<br/>
+				邮箱：{$web['email']}
+			</div>
+			<div class="bottom"><span></span></div>
+		</div>
+		
+	</div>
+	<div id="indexcontent">\n
+EOT;
+if($frontnewslist!=0){
+echo <<<EOT
+		<div id="frontpage">
+			<div class="rangetitle"><span>{$frontnews['title']}</span></div>
+			<div class="front_page">
+				<div id="frontpic">{$frontpiccode}</div>
+				{$frontnews['content']}
+			</div>
+			<div class="bottom"><span></span></div>
+		</div>\n
+EOT;
+}
+if($frontrange){		//判断是否有选项卡前面的平铺排列显示的项目
+echo <<<EOT
+		<div id="range">\n
+EOT;
+for ($i=0;$i<$frontrangenums;$i++){
+if($i%2==0){
+echo <<<EOT
+			<div class="rangeleftblock">\n
+EOT;
+}else{
+echo <<<EOT
+			<div class="rangerightblock">\n
+EOT;
+}
+echo <<<EOT
+				<div class="rangetitle"><span>{$frontrangecode[$i]['title']}</span></div>
+				<div class="rangecontent">{$frontrangecode[$i]['content']}</div>
+				<div class="rangebottom"><span></span></div>
+			</div>\n
+EOT;
+}
+echo <<<EOT
+		</div>\n
+EOT;
+}
+if($sprynums>0){		//判断是否有可显示的选项卡
+echo <<<EOT
+		<div id="spry">
+			<div id="sprytitle">\n
+EOT;
+for($i=0;$i<$sprynums;$i++){		//选项卡标题显示
+if($i==0){
+echo <<<EOT
+				<li class="sprytitleli">
+					<a href="javascript:" onmouseover="showspry({$i})"><span>{$sprycode[$i]['title']}</span></a>
+				</li>\n
+EOT;
+continue;
+}
+echo <<<EOT
+				<li class="sprytitlebackli">
+					<a href="javascript:" onmouseover="showspry({$i})"><span>{$sprycode[$i]['title']}</span></a>
+				</li>\n
+EOT;
+}
+echo <<<EOT
+			</div>\n
+EOT;
+for($i=0;$i<$sprynums;$i++){		//选项卡内容显示
+if($i==0){
+echo <<<EOT
+			<div class="sprycontent" id="sprycon{$i}">
+				{$sprycode[$i]['content']}
+			</div>\n
+EOT;
+continue;
+}
+echo <<<EOT
+			<div class="sprycontent" id="sprycon{$i}" style="display:none;">
+				{$sprycode[$i]['content']}
+			</div>\n
+EOT;
+}									//选项卡内容显示完成
+echo <<<EOT
+		</div>\n
+EOT;
+}									//选项卡显示完成
+if($backrange){		//判断是否有选项卡后面的平铺排列显示的项目
+echo <<<EOT
+		<div id="range">\n
+EOT;
+for ($i=0;$i<$backrangenums;$i++){
+if($i%2==0){
+echo <<<EOT
+			<div class="rangeleftblock">\n
+EOT;
+}else{
+echo <<<EOT
+			<div class="rangerightblock">\n
+EOT;
+}
+echo <<<EOT
+				<div class="rangetitle"><span>{$backrangecode[$i]['title']}</span></div>
+				<div class="rangecontent">{$backrangecode[$i]['content']}</div>
+				<div class="rangebottom"><span></span></div>
+			</div>\n
+EOT;
+}
+echo <<<EOT
+		</div>\n
+EOT;
+}
+echo <<<EOT
+	</div>
+	<div class="bodybottom"></div>
+	<div id="yqlink">
+		<div class="yqlinktitle"><a href="friendlink.php?action=reg">申请</a><a href="friendlink.php">友情链接</a></div>
+		{$yqlinkcode}
+	</div>
+</div>
+<script LANGUAGE='javascript'>
+	function showspry(i){
+		var elem = document.getElementById("sprycon" + i);
+		if(elem.style.display == "block") {return;}
+		for(var j=0;j<{$sprynums};j++){
+			var ee = document.getElementById("sprycon"+j);
+			if(j == i) {ee.style.display = "block";}
+			else {ee.style.display = "none"}
+		}
+		showsprytitle(i);	
+	} 
+	function showsprytitle(i){
+		var elems = document.getElementById("sprytitle").getElementsByTagName("li");
+		for(var j=0;j<elems.length;j++){
+			if(j == i){elems[j].className = "sprytitleli"}
+			else{elems[j].className = "sprytitlebackli"}
+		}
+	}
+</script>\n
+EOT;
+?>

@@ -1,0 +1,41 @@
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+<?php
+echo <<<EOT
+-->
+<head>
+<title>{$web[title]}</title>
+<link rel="stylesheet" type="text/css" href="{$web['styledir']}" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="{$web[keywords]}" />
+<meta name="description" content="{$web[description]}" />
+</head>
+<body>
+
+<div id="head">
+	<div id="logo"><img src="{$web[logo]}" /></div>
+	<div id="topbar">
+		{$headuser}
+		<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$web[name]}');" href="">设为首页</a> |
+		<a href="javascript:window.external.addFavorite('{$web[host]}','{$web[name]}');">加入收藏</a> |
+		<a href="guestbook.php">在线留言</a> |
+		<a name="StranLink">繁体中文</a>
+		{$stylecode}
+	</div>
+	<div id="banner"><a href="{$ad[bannerurl]}" target="_blank"><img src="{$ad[bannerimg]}" class="bannerimg"></a></div>
+	<div id="menu">
+		{$web['menu']}
+	</div>
+	<div style="clear:both;"></div>
+	<div class="headright"></div>
+	<div class="searchbar">{$searchbar}</div>
+</div>
+
+<!--
+EOT;
+?>
+-->
+<script language="javascript" src="Wq_StranJF.js"></script>

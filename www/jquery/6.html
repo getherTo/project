@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery.js" type="text/javascript"></script>
+    <style>
+        .colorGray{
+            color: #808080;
+        }
+        .pBorder{
+            border: 1px solid #808080;
+        }
+        .lineHeight{
+            line-height: 34px;
+        }
+        .fontSize18{
+            font-size: 18px;
+        }
+        .padding10{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+<a href="http://baidu.com" target="_blank" id="link">百度</a>
+<!--<script type="text/javascript">-->
+    <!--// 获取form表单的action-->
+    <!--alert($('#my_form').attr('action'));-->
+    <!--// 设置form的action-->
+    <!--$('#my_form').attr('action','bar.php')-->
+<!--</script>-->
+<script type="text/javascript">
+   // alert($('#link').attr('href'));
+    $('#link').attr('href','http://goodjobs.cn');
+</script>
+<div>
+    <h2>习近平谈中国人民抗日战争</h2>
+</div>
+<script type="text/javascript">
+    console.log($("div").html());
+    $("div").html('<h1>' + $("div").text() + '</ht>');
+    $("div").addClass("colorGray")
+    $("div").addClass("pBorder")
+    $("div").addClass("lineHeight")
+    $("div").addClass("fontSize18")
+    $("div").addClass("padding10")
+    $("div").removeClass("pBorder")
+</script>
+</body>
+</html>

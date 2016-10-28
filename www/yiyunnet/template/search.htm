@@ -1,0 +1,86 @@
+<!--
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+<?php
+echo <<<EOT
+-->
+
+
+<head>
+<title>{$web[title]}</title>
+<link rel="stylesheet" type="text/css" href="{$web['styledir']}" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="{$web[keywords]}" />
+<meta name="description" content="{$web[description]}" />
+</head>
+
+<body>
+
+<div id="body">
+	<div id="topbar">
+		{$headuser}
+		<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{$web[name]}');" href="">设为首页</a> |
+		<a href="javascript:window.external.addFavorite('{$web[host]}','{$web[name]}');">加入收藏</a> |
+		<a href="gestbook.php">在线留言</a> |
+		<a name="StranLink">繁体中文</A>
+	</div>
+	<div id="searmenu">{$web['menu']}</div>
+
+<script language="javascript" src="Wq_StranJF.js"></script>
+
+	<div class="seartitle"><br /><br />内容搜索</div>
+	<div class="searform">
+		<form name="searchform" id="searchform" action="" method="get" onsubmit="return checkform();" style="margin:0px;">
+		关键字：<input type="text" name="keyword" size="30" value="{$keyword}">
+		&nbsp; <input type="submit" value="搜 索"><br/><br/>
+		&nbsp;　　&nbsp;
+		<input type="radio" name="type" value="title" {$checktitle} style="border:0" />标题
+		<input type="radio" name="type" value="content" {$checkcontent} style="border:0" />内容
+		<input type="radio" name="type" value="author" {$checkauthor} style="border:0" />作者
+		<input type="radio" name="type" value="username" {$checkusername} style="border:0" />发布者
+		</form>
+	</div>
+	<div class="searhr">
+		技巧：{$artifice}
+	</div>
+	<div class="searcontent">
+		{$searchresult}
+		<div class="showpage">{$showpage}</div>
+	</div>
+
+
+
+
+	<div class=searside>
+		<div class="sideblock">
+			<div class="title"><span>最新推荐</span></div>
+			<div class="sidecontent">{$listvouch}</div>
+			<div class="bottom"><span></span></div>
+		</div>
+		<div class="sideblock">
+			<div class="title"><span>热门</span></div>
+			<div class="sidecontent">{$listhots}</div>
+			<div class="bottom"><span></span></div>
+		</div>
+
+	</div>
+
+	<div class="bodybottom"></div>
+</div>
+<script LANGUAGE='javascript'>
+function checkform() {
+	if (document.searchform.keyword.value==''){
+		alert('！！！请输入关键字！');
+		document.searchform.keyword.focus();
+		return false;
+	}
+	return true;
+}
+//-->
+</SCRIPT>
+<!--
+EOT;
+?>
+-->

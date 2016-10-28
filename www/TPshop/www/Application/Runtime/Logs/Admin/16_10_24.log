@@ -1,0 +1,257 @@
+[ 2016-10-24T11:33:30+08:00 ] 127.0.0.1 /index.php/admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-10-24T11:33:31+08:00 ] 127.0.0.1 /index.php/Admin/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login D:\wamp\www\TPshop\www\Application\Admin\Common\function.php 第 69 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.003000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-24T11:33:31+08:00 ] 127.0.0.1 /index.php/Admin/Admin/vertify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: vertify D:\wamp\www\TPshop\www\Application\Admin\Common\function.php 第 69 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-24T11:33:49+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Admin&a=login&t=0.33762666199356783
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: login D:\wamp\www\TPshop\www\Application\Admin\Common\function.php 第 69 行.
+
+[ 2016-10-24T11:33:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-24T11:33:49+08:00 ] 127.0.0.1 /index.php/Admin/System/login_task
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: login_task D:\wamp\www\TPshop\www\Application\Admin\Common\function.php 第 69 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\TPshop\www\Application\Admin\Controller\SystemController.class.php 第 246 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-24T11:33:49+08:00 ] 127.0.0.1 /index.php/Admin/Index/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+NOTIC: [8] Undefined index: welcome D:\wamp\www\TPshop\www\Application\Admin\Common\function.php 第 69 行.
+NOTIC: [8] Undefined index: version D:\wamp\www\TPshop\www\Application\Admin\Controller\IndexController.class.php 第 62 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-24T17:02:51+08:00 ] 127.0.0.1 /index.php/Admin/Wechat/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.094005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.019001s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\138883f8411c83891319bcbaf8069345.php 第 168 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.261014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.261014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024002s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.026001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.050003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-10-24T17:03:05+08:00 ] 127.0.0.1 /index.php/Admin/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 184 行.
+NOTIC: [8] Undefined index: user_id D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-24T17:03:06+08:00 ] 127.0.0.1 /index.php/Admin/Order/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 184 行.
+NOTIC: [8] Undefined index: user_id D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-24T17:03:07+08:00 ] 127.0.0.1 /index.php/Admin/order/ajaxindex/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: ajaxindex D:\wamp\www\TPshop\www\Application\Admin\Common\function.php 第 69 行.
+NOTIC: [2] urlencode() expects parameter 1 to be string, array given D:\wamp\www\TPshop\www\Application\Admin\Controller\OrderController.class.php 第 75 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.001000s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant order_status - assumed 'order_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Undefined index: is_cod D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Use of undefined constant pay_status - assumed 'pay_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 44 行.
+NOTIC: [8] Use of undefined constant shipping_status - assumed 'shipping_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 45 行.
+NOTIC: [8] Use of undefined constant order_status - assumed 'order_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Undefined index: is_cod D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Use of undefined constant pay_status - assumed 'pay_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 44 行.
+NOTIC: [8] Use of undefined constant shipping_status - assumed 'shipping_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 45 行.
+NOTIC: [8] Use of undefined constant order_status - assumed 'order_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Undefined index: is_cod D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Use of undefined constant pay_status - assumed 'pay_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 44 行.
+NOTIC: [8] Use of undefined constant shipping_status - assumed 'shipping_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 45 行.
+NOTIC: [8] Use of undefined constant order_status - assumed 'order_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Undefined index: is_cod D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Use of undefined constant pay_status - assumed 'pay_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 44 行.
+NOTIC: [8] Use of undefined constant shipping_status - assumed 'shipping_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 45 行.
+NOTIC: [8] Use of undefined constant order_status - assumed 'order_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Undefined index: is_cod D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Use of undefined constant pay_status - assumed 'pay_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 44 行.
+NOTIC: [8] Use of undefined constant shipping_status - assumed 'shipping_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 45 行.
+NOTIC: [8] Use of undefined constant order_status - assumed 'order_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Undefined index: is_cod D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 43 行.
+NOTIC: [8] Use of undefined constant pay_status - assumed 'pay_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 44 行.
+NOTIC: [8] Use of undefined constant shipping_status - assumed 'shipping_status' D:\wamp\www\TPshop\www\Application\Runtime\Cache\Admin\8eed6bb92403d43d1e94abecb9ebb26a.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

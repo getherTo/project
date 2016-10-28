@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<form name=checkboxform>
+    <input type=checkbox name=C1 checked>看电影<br>
+    <input type=checkbox name=C2 checked>听音乐<br>
+    <input type=checkbox name=C3 checked>打游戏<br>
+    <input type=checkbox name=C4 checked>看书<br>
+    <br>
+    <input type=button value="全部选中" onClick="checkAll()"><br>
+    <input type=button value="全部不选" onClick="uncheckAll()"><br>
+    <input type=button value="选择转换" onClick="switchAll()"><br>
+</form>
+<script>
+    function checkAll() {
+        for (var j = 1; j <= 9; j++) {
+            box = eval("document.checkboxform.C" + j);
+            if (box.checked == false) box.checked = true;
+        }
+    }
+    function uncheckAll() {
+        for (var j = 1; j <= 9; j++) {
+            box = eval("document.checkboxform.C" + j);
+            if (box.checked == true) box.checked = false;
+        }
+    }
+
+    function switchAll() {
+        for (var j = 1; j <= 9; j++) {
+            box = eval("document.checkboxform.C" + j);
+            box.checked = !box.checked;
+        }
+    }
+</script>
+
+</body>
+</html>

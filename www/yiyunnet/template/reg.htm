@@ -1,0 +1,157 @@
+<!--
+<?php
+if($action!="agree"){
+echo <<<EOT
+-->
+
+<div id="body">
+	<form name="form" method="get" action="">
+	<div class="reg-treaty-title">在注册前请先阅读以下协议</div>
+	<ul class="reg-treaty">
+		<li>一、不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益，不得利用本站制作、复制和传播下列信息：
+			<ul>
+				<li>（一）煽动抗拒、破坏宪法和法律、行政法规实施的；</li>
+				<li>（二）煽动颠覆国家政权，推翻社会主义制度的；</li>
+				<li>（三）煽动分裂国家、破坏国家统一的；</li>
+				<li>（四）煽动民族仇恨、民族歧视，破坏民族团结的；</li>
+				<li>（五）捏造或者歪曲事实，散布谣言，扰乱社会秩序的；</li>
+				<li>（六）宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；</li>
+				<li>（七）公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；</li>
+				<li>（八）损害国家机关信誉的；</li>
+				<li>（九）其他违反宪法和法律行政法规的；</li>
+				<li>（十）发布黄色反动文章</li>
+			</ul>
+		</li>
+		<li>二、互相尊重，对自己的言论和行为负责。</li>
+	</ul>
+	<div style="text-align:center;padding:10 0;">
+		<input type="hidden" name="action" id="action" value="agree">
+		<input type="hidden" name="frompage" id="frompage" value="{$frompage}">
+		<input type="submit" value="我同意"/>
+		<input type="button" name="Submit2" onclick="window.location.href='$frompage'"  value="不同意">
+	</div>
+	</form>
+</div>
+
+<!--
+EOT;
+}else{
+echo <<<EOT
+-->
+
+<div id="body">
+	<form name="form" method="post" action="?action=save" onsubmit="return Checkuser();">
+	<div style="margin:10 220;font-weight:bold;padding:5;">请填写注册信息</div>
+	<div style="border:1px solid #888;margin:2 220;">
+		<div style="margin:10 20;background:#ddd;padding:5;">以下为必填信息</div>
+		<div style="padding: 5 5 5 50;">
+		会 员 名：<input type="text" name="name" id="name"/> 4到16字节，一个汉字算两个字节
+		</div>
+		<div style="padding:5 5 5 50;">
+		邮　　箱：<input type="text" name="email" id="email"/>
+		</div>
+		<div style="padding:5 5 5 50;">
+		密　　码：<input type="password" name="password" id="password"/>	6到32字节，不能有引号、空格
+		</div>
+		<div style="padding:5 5 5 50;">
+		重复密码：<input type="password" name="password2" id="password2"/>
+		</div>
+		<div style="margin:10 20;background:#ddd;padding:5;">以下为选填信息</div>
+		<div style="padding:5 5 5 50;">
+		问　　题：<input type="text" name="clue" id="clue"/>	忘记密码时可以回答问题找回密码
+		</div>
+		<div style="padding:5 5 5 50;">
+		答　　案：<input type="text" name="answer" id="answer"/> 问题的答案
+		</div>
+		<div style="padding:5 5 5 50;">
+		生　　日：<input type="text" name="uyear" id="uyear" size="4"/>年
+				<input type="text" name="umonth" id="umonth" size="2"/>月
+				<input type="text" name="uday" id="uday" size="2"/>日<br/>
+		</div>
+		<div style="padding:5 5 5 50;">
+		性　　别：<input type="radio" name="sex" id="sex" value="0" checked style="border:0"/>保密
+				<input type="radio" name="sex" id="sex" value="1" style="border:0"/>男
+				<input type="radio" name="sex" id="sex" value="2" style="border:0"/> 女
+		</div>
+		<div style="padding:5 5 5 50;">
+		&nbsp;Q　　Q ：<input type="text" name="oicq" id="oicq"/>
+		</div>
+		<div style="padding:5 5 5 50;">
+		个人主页：<input type="text" name="homepage" id="homepage"/>
+		</div>
+		<div style="padding:5 5 5 50;">
+		验 证 码：<input type="text" name="yzm" id="yzm" size="5"/>
+		<img src="yzimg.php" align="absmiddle" title="看不清楚，换一张" onClick="this.src='yzimg.php?n='+ Math.random();">
+		</div>
+		<div style="text-align:center;padding:5;">
+		<input type="hidden" name="frompage" id="frompage" value="{$frompage}"/>
+		<input type="submit" value="提交"/> 　
+		<input type="reset" value="重置"/>
+		</div>
+	</div>
+	</form>
+	<div class="bodybottom"></div>
+</div>
+
+
+<script language='JavaScript' type='text/JavaScript'>
+function Checkuser(){
+	if (document.form.name.value==''){
+		alert('温馨提示！用户名不能为空！');
+		document.form.name.focus();
+	return false;
+	}
+	if (document.form.email.value==''){
+		alert('温馨提示！请输入邮箱地址！');
+		document.form.email.focus();
+		return false;
+	}
+	var str_reg=/^\w+((-\w+)|(\.\w+))*\@{1}\w+\.{1}\w{2,4}(\.{0,1}\w{2}){0,1}/ig;
+	if (document.form.email.value.search(str_reg) == -1)
+	{
+		alert("温馨提示！邮箱格式错误！");
+		document.form.email.value = "";
+		document.form.email.focus();
+		return false;
+	}
+	if (document.form.password.value==''){
+		alert('温馨提示！请输入密码！');
+		document.form.password.focus();
+		return false;
+	}
+	if (document.form.password2.value==''){
+		alert('温馨提示！请重复密码，以免因输错密码而无法登陆！');
+		document.form.password2.focus();
+		return false;
+	}
+	if(document.form.password.value!=document.form.password2.value){
+		alert("温馨提示！两次输入的密码不一样，请重新输入！");
+		document.form.password.value = "";
+		document.form.password2.value = "";
+		document.form.password.focus();
+		return false;
+	}
+	if(document.form.password.value.length<6 || document.form.password.value.length>32){
+		alert("温馨提示！密码要在 6-32 个字节！而您输入了 "+document.form.password.value.length+" 个字节");
+		document.form.password.value = "";
+		document.form.password2.value = "";
+		document.form.password.focus();
+		return false;
+	}
+	if (document.form.yzm.value==''){
+		alert('温馨提示！请输入验证码！');
+		document.form.yzm.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+
+
+
+
+<!--
+EOT;
+}
+?>
+-->

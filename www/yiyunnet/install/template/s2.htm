@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>宜云网络网站管理系统安装程序</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="body">
+<?php
+echo <<<EOT
+<div class="boxtitle">
+	<span>第二步：查看服务器信息</span>
+</div>
+<div style="padding:5px;"></div>
+<table width="726" align="center" border="1" bordercolor="cccccc" cellspacing="0">
+	<tr>
+		<th width="300" align="center"><strong>参数</strong></th>
+		<th width="424"><strong>值</strong></th>
+	</tr>
+	<tr>
+		<td><strong>服务器域名/IP地址</strong></td>
+		<td>{$_SERVER['HTTP_HOST']} {$_SERVER["REMOTE_ADDR"]}</td>
+	</tr>
+	<tr>
+		<td><strong>服务器操作系统</strong></td>
+		<td>{$_ENV['OS']}</td>
+	</tr>
+	<tr>
+		<td><strong>服务器解译引擎</strong></td>
+		<td>{$_SERVER["SERVER_SOFTWARE"]}</td>
+	</tr>
+	<tr>
+		<td><strong>PHP版本</strong></td>
+		<td>{$phpv}　　<span style="color:#880000;">建议在4.1版以上使用本系统。</span></td>
+	</tr>
+	<tr>
+		<td><strong>网站物理路径</strong></td>
+		<td>{$path}</td>
+	</tr>
+	<tr>
+		<td><strong>脚本超时时间</strong></td>
+		<td>{$maxtime}秒</td>
+	</tr>
+	<tr>
+		<td>是否允许打开远程文件</td>
+		<td>{$allow_url_fopen}</td>
+	</tr>
+</table>
+
+<div class="boxtitle">
+	<span>系统环境要求</span>
+</div>
+<div style="width:720px; margin:10px auto; color:#666;">
+	系统环境要求必须满足下列所有条件，否则系统或系统部份功能将无法使用！.
+</div>
+<table width="726" align="center" border="1" bordercolor="cccccc" cellspacing="0">
+	<tr>
+		<th width="200" align="center"><strong>需开启的变量或函数</strong></th>
+		<th width="61"><strong>要求</strong></th>
+		<th width="463"><strong>实际状态及建议</strong></th>
+	</tr>
+	<tr>
+		<td>安全模式</td>
+		<td>Off</td>
+		<td>{$safemode}(本系统不支持在非win主机的安全模式下运行)</td>
+	</tr>
+	<tr>
+		<td>GD 支持 </td>
+		<td>On</td>
+		<td>{$gdver}(不支持将导致与图片相关的大多数功能无法使用或引发警告)</td>
+	</tr>
+	<tr>
+		<td>MySQL 支持</td>
+		<td>On</td>
+		<td>{$ismysql}(不支持无法使用本系统)</td>
+	</tr>
+</table>
+<div class="boxtitle">
+	<span>目录权限检测</span>
+</div>
+<div style="width:720px; margin:10px auto; color:#666;">
+	系统要求必须满足下列所有的目录权限全部可读写的需求才能使用，其它应用目录安装后自行在管理后台检测。
+</div>
+<table width="726" align="center" border="1" bordercolor="cccccc" cellspacing="0">
+	<tr>
+		<th width="255" align="center"><strong>目录名</strong></th>
+		<th width="66"><strong>要求</strong></th>
+		<th width="403"><strong>实际状态及建议</strong></th>
+	</tr>
+EOT;
+foreach($sp_testdirs as $d){
+	if($d!='/') $fulld = WEBROOT.$d;
+	else $fulld = WEBROOT;
+	if($d!='/') $rsta = (is_readable($fulld) ? '<span style="color:green">[√]读</span>' : '<span style="color:red">[×]读</span>');
+	else $rsta = '';
+	$wsta = (TestWrite($fulld) ? '<span style="color:green">[√]写</span>' : '<span style="color:red">[×]写</span>');
+echo <<<EOT
+	<tr>
+		<td>{$d}</td>
+		<td>读写</td>
+		<td>$rsta $wsta</td>
+	</tr>
+EOT;
+}
+echo <<<EOT
+</table>
+<div class="butbox boxcenter">
+	<input type="button" class="backbut" value="" onclick="history.back();" style="margin-right:20px" />
+EOT;
+if(!$sp_mysql_err){
+echo <<<EOT
+	<input type="button" class="nextbut" value="" onclick="window.location.href='index.php?step=3';" />
+EOT;
+}
+echo <<<EOT
+</div>
+EOT;
+?>
+</div>
+</body>
+</html>

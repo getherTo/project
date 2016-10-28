@@ -1,0 +1,126 @@
+<!--
+<?php
+echo <<<EOT
+-->
+
+<div id="body">
+<!--
+EOT;
+if($action=="")
+echo <<<EOT
+-->
+	<div class="yqlinkpagetitle">文字链接</div>
+	<div class="yqlinkpage">{$textlink}</div>
+	<div class="yqlinkpagetitle">图片链接</div>
+	<div class="yqlinkpage">{$imagelink}</div>
+<!--
+EOT;
+if($action=="cannotreg")
+echo <<<EOT
+-->
+	<br/><br/><br/><br/>
+	<div style="margin:10 320;padding:30">
+		<div class="title"><span>申请友情链接</span></div>
+		<div class="sidecontent">
+			对不起，您还没有登陆或注册<br/><br/>
+			<div style="text-align:center">
+				<a href="reg.php">注册</a>
+				<a href="login.php">登陆</a>
+			</div>
+		</div>
+		<div class="bottom"><span></span></div>
+	</div>
+	<br/><br/><br/><br/>
+<!--
+EOT;
+if($action=="reg")
+echo <<<EOT
+-->
+	<div style="float:left;display:block;width:49%;">
+		<div class="title"><span>本站链接信息</span></div>
+		<div class="sidecontent">
+			<table width="80%" align="center" cellpadding="5">
+			<tr>
+				<td width="25%">本站名称：</td>
+				<td>{$web['name']}</td>
+			</tr>
+			<tr>
+				<td>本站网址：</td>
+				<td>{$web['host']}</td>
+			</tr>
+			<tr>
+				<td>本站LOGO：</td>
+				<td><img src="{$web['host']}images/logo.gif" width="88" height="31"><br/>{$web['host']}images/logo.gif</td>
+			</tr>
+			<tr>
+				<td>申请说明：</td>
+				<td>请申请链接的同时做好本站的链接。否则不会通过。申请后可以发一封E_mail通知我，好尽快审核通过</td>
+			</tr>
+			</table>
+		</div>
+		<div class="bottom"><span></span></div>
+	</div>
+	<div style="float:right;display:block;width:50%;">
+		<div class="title"><span>填写申请表单</span></div>
+		<div class="sidecontent">
+			<form method='post' action='friendlink.php?action=add' name='form1'onsubmit="return checkfrom();" style="margin:0px">
+			<table width="80%" align="center" cellpadding="5">
+			<tr>
+				<td>网站名称</td>
+				<td><input type="text" name="sitename" size="12"></td>
+			</tr>
+			<tr>
+				<td>贵站网址：</td>
+				<td><input type="text" name="siteurl" size="28"></td>
+			</tr>
+			<tr>
+				<td>贵站LOGO：</td>
+				<td><input type="text" name="sitelogo" size="28"></td>
+			</tr>
+			<tr>
+				<td>简要说明：</td>
+				<td><input type="text" name="descrip" size="28"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="提交"></td>
+			</tr>
+			</table>
+			</form>
+		</div>
+		<div class="bottom"><span></span></div>
+	</div>
+<script language='JavaScript' type='text/JavaScript'>
+function checkfrom(){
+  if (document.form1.sitename.value==''){
+    alert('请填写你的网站名称！！！');
+    document.form1.sitename.focus();
+    return false;
+  }
+  if (document.form1.siteurl.value.length<14){
+    alert('请填写您的网址！！！');
+    document.form1.siteurl.focus();
+    return false;
+  }
+  return true;
+}
+</script>
+<!--
+EOT;
+if($action=="regclose")
+echo <<<EOT
+-->
+
+	<div style="padding:200;text-align:center">抱歉，本站暂时不允许申请友情链接</div>
+
+<!--
+EOT;
+echo <<<EOT
+-->
+	<div class="bodybottom"></div>
+</div>
+
+<!--
+EOT;
+?>
+-->

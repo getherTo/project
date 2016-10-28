@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>用户列表</h1>
+<table border="1" width="1000px">
+    <tr>
+        <th>ID</th>
+        <th>用户名</th>
+        <th>用户Email</th>
+    </tr>
+    <volist name="arr_users" id="user">
+        <tr>
+            <td>{$user.id}</td>
+            <td>{$user.user_name}</td>
+            <td>{$user.email}</td>
+        </tr>
+    </volist>
+</table>
+</body>
+</html>

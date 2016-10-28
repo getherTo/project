@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="">
+<table align="center" cellpadding="2" cellspacing="0" border="0">
+    <caption><h2>学院信息</h2></caption>
+        <tr>
+            <td>毕业院校：<input type="text" name="username" required></td>
+        </tr>
+        <tr>
+            <td>性别：&nbsp;&nbsp;<label><input type="radio" name="sex" value="1" checked="checked">男</label>
+            <label><input type="radio" name="sex" value="2" checked="checked">女</label>
+            <label><input type="radio" name="sex" value="3" checked="checked">保密</label>
+            </td>
+        </tr>
+        <tr>
+            <td>学历：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="edu">
+                    <option value="1">小学</option>
+                    <option value="2">初中</option>
+                    <option value="3">高中</option>
+                    <option value="4">大学</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>毕业院校：<input type="text" name="xuexiao" required></td>
+        </tr>
+    <tr>
+        <td>爱好：
+            <input type="checkbox" name="interesting[]" value="4">看电影
+            <input type="checkbox" name="interesting[]" value="5">打球
+            <input type="checkbox" name="interesting[]" value="6">游泳
+            <input type="checkbox" name="interesting[]" value="7">听音乐
+        </td>
+    </tr>
+
+    <tr>
+        <td>评价：
+        <textarea name="eval" rows="4" cols="40" required="required"></textarea></td>
+    </tr>
+
+    <tr>
+        <td  align="left">
+            <input type="submit" name="submit" value="提交">
+            <input type="reset" name="reset" value="重置">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

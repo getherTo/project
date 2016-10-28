@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.5/dist/css/bootstrap.css">
+    <script src="../bootstrap-3.3.5/dist/js/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="navbar navbar-inverse">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="color: white">project name</h3>
+        <form class="form-inline" style="float: right;margin: -26px 12px">
+            <div class="form-group"><input type="text" placeholder="Email" class="form-control"></div>
+            <div class="form-group"><input type="password" placeholder="Password" class="form-control"></div>
+            <div class="form-group"><input type="submit" value="sign in" class="btn btn-success"></div>
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target=".popupWin">Register</button>
+            <div class="modal popupWin">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h4 class="modal-title">用户注册</h4>
+                        </div>
+                        <div class="modal-body" style="width: 350px">
+                            <form role="form" class="form-horizontal" style="width: 350px">
+                                <div class = "form-group">
+                                    <label class="col-md-4 control-label" for = "name">姓名</label>
+                                    <div class="col-md-4">
+                                        <input type = "text" class = "form-control" id = "name"
+                                               placeholder = "请输入姓名">
+                                    </div>
+                                </div>
+                                <div class = "form-group">
+                                    <label class="col-md-4 control-label" for = "tel">电话号码</label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id = "tel"
+                                               placeholder = "请输入您的电话号码">
+                                    </div>
+                                </div>
+                                <div class = "form-group">
+                                    <label class="col-md-4 control-label" for = "idCard">请上传身份证</label>
+                                    <div class="col-md-4">
+                                        <input type = "file" id = "idCard" style="display:inline-block;">
+                                    </div>
+                                </div>
+                                <div class = "form-group">
+                                    <label class="col-md-4 control-label" for = "profession">选择职业</label>
+                                    <div class="col-md-8">
+                                        <select id = "profession" class = "form-control">
+                                            <option>软件工程师</option>
+                                            <option>测试工程师</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <button type="button" class="btn btn-primary">保存</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="panel-body" style="height: 300px;background-color: #dcdcdc">
+       <h1>Hello,world</h1>This is a template for a simple marketing or infomational website.It inclubes a large callout called
+        a jumbotron and three supporting pieces of content. Use it as a starting point to create someting more unique.<br><br><br><br><br>
+        <button type="button" class="btn btn-primary">Sign in</button>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-4"><h3>First Flight</h3><p>Mr. Johnson had never been up in an aerophane before and he had read a lot about air accidents, so one day when a friend offered to take him for a ride in his own small phane, Mr. Johnson was very worried about accepting. Finally, however, his friend persuaded him that it was very safe, and Mr. Johnson boarded the plane.
+    </p><button class="btn btn-default">view details &rsaquo;&rsaquo;</button></div>
+    <div class="col-md-4"><h3>First Flight</h3><p>Mr. Johnson had never been up in an aerophane before and he had read a lot about air accidents, so one day when a friend offered to take him for a ride in his own small phane, Mr. Johnson was very worried about accepting. Finally, however, his friend persuaded him that it was very safe, and Mr. Johnson boarded the plane.
+    </p><button class="btn btn-default">view details &rsaquo;&rsaquo;</button></div>
+    <div class="col-md-4"><h3>First Flight</h3><p>Mr. Johnson had never been up in an aerophane before and he had read a lot about air accidents, so one day when a friend offered to take him for a ride in his own small phane, Mr. Johnson was very worried about accepting. Finally, however, his friend persuaded him that it was very safe, and Mr. Johnson boarded the plane.
+    </p><button class="btn btn-default">view details &rsaquo;&rsaquo;</button></div>
+</div>
+<hr width="1100px">
+<p align="center">&copy;2016&nbsp;Company,lnc</p>
+</body>
+</html>

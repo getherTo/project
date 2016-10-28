@@ -1,0 +1,107 @@
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background:#f2f7fd;
+	padding-top:0px;
+	padding-bottom:20px;
+	font-size:14px;
+	text-align:center;
+}
+#body{
+	background:#FDFEFC;
+	width:830px; 
+	margin:6px auto;
+	padding-top:18px;
+	border:5px solid #d2d9f0;
+	text-align:left;
+}
+table{
+	border:0;
+	border-collapse:collapse;
+}
+th{
+	padding:5px;
+}
+td{
+	padding:5px;
+}
+a{
+	color:#06C;
+}
+a:hover{
+	color:#F30;
+}
+
+.boxcenter{
+	margin:0px auto;
+}
+
+.main{
+	width:760px;
+	margin-top:10px;
+}
+
+.boxtitle{
+	width:730px;
+	height:22px;
+	margin:10px auto 0px;
+	background:url(images/boxtitle_bg.gif) 0px 20px repeat-x;
+	overflow:hidden;
+}
+.boxtitle span{
+	width:220px;
+	height:22px;
+	line-height:22px;
+	overflow:hidden;
+	display:block;
+	font-size:12px;
+	padding-top:1px;
+	text-indent:10px;
+	background:url(images/boxtitle_bg.gif) 0px -2px no-repeat;
+	letter-spacing:1px;
+	color:#4D6A8F;
+}
+.butbox{
+	width:760px;
+	text-align:center;
+	margin-top:20px;
+}
+
+.nextbut{
+	width:104px;
+	height:34px;
+	border:none;
+	background:url(images/but_next.gif) no-repeat;
+	cursor:pointer;
+}
+
+.backbut{
+	width:104px;
+	height:34px;
+	border:none;
+	background:url(images/but_back.gif) no-repeat;
+	cursor:pointer;
+}
+
+
+.setupbut{
+	width:104px;
+	height:34px;
+	border:none;
+	background:url(images/but_setup.gif) no-repeat;
+	cursor:pointer;
+}
+
+.pact{
+	width:730px;
+	margin:15px auto;
+	color:#666;
+	line-height:200%;
+	overflow:auto;
+}
+.pact h4{
+	color:#444;
+	font-size:14px;
+}
+.pact p{
+	text-indent:30px;
+}

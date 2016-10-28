@@ -1,0 +1,639 @@
+body,td,div,form,p,select,input,textarea,option{font: 14px Arial,Tahoma,宋体,verdana;color:#000;}
+body{
+	margin: 5;
+	background-color:#ffffff;
+	text-align:center;
+	background-image:url(bg.gif);
+	background-attachment:scroll;		/*scroll	fixed*/
+	background-repeat:repeat;
+}
+table{
+	border:0;
+	border-collapse:collapse;
+}
+th{
+	font-size:15px;
+}
+a{
+	text-decoration:none;
+	color:000;
+}
+a:hover{
+	text-decoration:underline;
+	color:833;
+}
+input{
+	border:1px solid #c9afd3;
+}
+#head{
+	text-align:left;position:relative;left:0;top:0;
+	width:960px;
+	margin:0 auto 1 auto;
+	padding: 1 0 3;
+	background:url("head_bg.gif") repeat-x;
+}
+#body{
+	text-align:left;position:relative;left:0;top:0;
+	width:960px;
+	margin:0 auto 0 auto;
+	padding:0;
+}
+#body .bodybottom{
+	clear:both;
+}
+#foot{
+	text-align:left;
+	width:960px;
+	background:url("foot_bg.gif") repeat-x;
+	margin:0 auto 1 auto;
+	padding: 1 0;
+}
+/*头部logo，全站通用*/
+#logo{
+	float:left;
+	margin:0 5 0 0;
+}
+/*banner广告位置*/
+#banner{
+	float:right;
+	padding:5;
+}
+.bannerimg{
+	width:730;
+	height:50;
+	border:0;
+}
+.headright{
+	position:absolute;right:0;bottom:-14;width:70;height:120;
+	background:url("headright.gif") no-repeat;
+}
+/*顶部菜单*/
+#topbar{
+	height:20;
+	text-align:right;
+	border-bottom:1px solid #c9afd3;
+	float:right;
+	margin:0 0 5 5;
+	padding:2;
+}
+/*主菜单*/
+#menu {
+	float:left;padding-top:10px;
+	width:100%;
+	font-size:14px;
+	line-height:normal;
+	border-bottom:1px solid #c9afd3;
+}
+#menu ul {
+	margin:0;
+	padding:5px 10px 0 10px;
+	list-style:none;
+}
+#menu li {
+	display:inline;
+	margin:0;
+	padding:0;height:25px;
+}
+#menu a {
+	float:left;
+	background:url("menuleft.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 7px;
+	text-decoration:none;
+}
+#menu a span {
+	float:left;
+	display:block;
+	background:url("menuright.gif") no-repeat right top;
+	padding:5px 14px 4px 6px;
+	color:#000000;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#menu a span {float:none;}
+/* End IE5-Mac hack */
+#menu a:hover span {
+	color:#6B4899;
+	background-position:100% -42px;
+}
+#menu a:hover {
+	background-position:0% -42px;
+}
+/*首页主体侧面*/
+#indexside{
+	float:left;
+	width:230;
+	margin:0 5 5 0;
+}
+/*登陆显示块*/
+#login{
+	margin:5 5 0 0;
+	clear:both;
+}
+/*控制行距*/
+.sidelogin{
+	padding:5 5 5 15;
+	line-height:1.3em;
+	border-left:1px solid #d5d4d6;
+	border-right:1px solid #d5d4d6;
+}
+/*标题栏样式*/
+.title{
+	font-weight:bold;
+	background:url("title_left.gif") no-repeat left top;
+	padding-left:10;
+}
+.title span{
+	display:block;
+	background:url("title_right.gif") no-repeat right top;
+	padding:12px 10px 11px 15px;
+	color:#000000;
+}
+/*显示块底部样，与标题相呼应*/
+.bottom{
+	font-weight:bold;
+	background:url("bottom_left.gif") no-repeat left bottom;
+	padding-left:10;
+}
+.bottom span{
+	display:block;
+	background:url("bottom_right.gif") no-repeat right bottom;
+	padding:5px 0px 0px 0px;
+	color:#000000;
+}
+/*侧面显示模块，还有其它页面显示在中间的也用到了。所有页面通用*/
+.sideblock{
+	margin:0 5 0 0;
+	padding:5 0 5;
+}
+.sideblock li{
+	line-height:20px;
+	list-style:none outside;
+	padding:2 0 2 30;
+	border:1px #c9afd3 dashed;
+	margin:1px;
+}
+.sidecontent{
+	margin:0;padding:3 6;
+	line-height:1.6em;
+	border-left:1px solid #d5d4d6;
+	border-right:1px solid #d5d4d6;
+}
+/*公告显示样式，标题，内容，时间*/
+.placardtitle{
+	font-weight:bold;
+	padding:15 0 5;
+}
+.placardcontent{
+	padding-left:20px;
+}
+.placardtime{
+	text-align:right;
+	padding-right:10px;
+}
+/*首页主体大的内容块*/
+#indexcontent{
+	float:right;
+	clear:right;
+	padding:0;
+	width:720;
+	margin:5 0;
+}
+/*首页主体大的图片*/
+#frontpic{
+	float:right;
+	position:relative;top:-5;
+	width:410;
+	height:170;border:1px solid #d4b9d7;
+	margin:5 1 0 18;
+}
+.frontimg{
+	border:0px;
+	width:400px;
+	height:160px;
+	margin:5px;
+}
+#frontpage{
+	clear:left;
+	padding:0;
+}
+.front_page{
+	padding:0 5 5;
+	line-height:1.3em;
+	border-left:1px solid #d5d4d6;
+	border-right:1px solid #d5d4d6;
+}
+/*选项卡方式显示有关样式*/
+#spry{
+	clear:both;
+}
+#sprytitle{
+	padding-top:5px;
+}
+/*选项卡当前显示的标题*/
+.sprytitleli{
+	display:block;float:left;cursor:hand;font-family:宋体;
+}
+.sprytitleli a{
+	float:left;
+	background:url("sprytitle_left.gif") no-repeat left top;
+	margin:0;
+	padding:0 0 0 10px;
+	text-decoration:none;
+}
+.sprytitleli a span{
+	background:url("sprytitle_right.gif") no-repeat right top;
+	float:left;
+	display:block;
+	padding:8px 10px 2px 0px;
+}
+/*选项卡暂未显示的标题*/
+.sprytitlebackli{
+	display:block;float:left;cursor:hand;font-family:宋体;
+}
+.sprytitlebackli a{
+	float:left;
+	background:url("sprytitle_left.gif") no-repeat;
+	background-position:0% -42px;
+	margin:0;
+	padding:0 0 0 10px;
+	text-decoration:none;
+}
+.sprytitlebackli a span{
+	background:url("sprytitle_right.gif") no-repeat;
+	background-position:100% -42px;
+	float:left;
+	display:block;
+	padding:8px 10px 2px 0px;
+}
+/*选项卡内容块*/
+.sprycontent{
+	margin:0;clear:left;padding:0px 6px;height:150px;
+	border:1px solid #d4b9d7;line-height:1.6em;
+}
+/*选项卡内容块中显示文字列表和图片时文字列表整体样式*/
+.sprycontenttlist{
+	float:left;display:block;width:560;line-height:1.6em;
+}
+/*选项卡内容中每一条记录的样式*/
+.sprycontent li{
+	float:left;width:45%;display:block;margin:0 10;
+}
+.sprycontent li a{
+	float:left;clear:left;display:block;
+}
+.sprycontent li span{
+	float:right;clear:right;display:block;width:70;
+}
+/*选项卡内图片块布局*/
+.sprycontent .imagelist{
+	padding:10 8 5 8;float:right;display:block;text-align:center;
+}
+/*选项卡具体图片样式*/
+.spryimg{
+	clear:both;width:120;height:90;margin-bottom:10px;border:0px;
+}
+/*选项卡内产品布局*/
+.spryprod_block{
+	float:left;padding:10 0 0;display:block;width:320px;margin-left:15;
+}
+/*选项卡内产品标题*/
+.spryprod_title{
+	font-weight:bold;
+}
+/*选项卡内产品具体图片*/
+.spryprod_img{
+	float:left;width:120;height:90;border:0px;margin-right:10px;
+}
+/*平铺排列方式显示有关样式*/
+#range{
+	clear:both;
+}
+/*左*/
+.rangeleftblock{
+	clear:left;display:block;margin-top:5px;
+	float:left;width:355;
+}
+/*右*/
+.rangerightblock{
+	clear:right;display:block;margin-top:5px;
+	float:right;width:355;
+}
+/*平铺排列方式标题*/
+.rangetitle{
+	font-weight:bold;
+	background:url("title_left.gif") no-repeat left top;
+	padding-left:10;
+}
+.rangetitle span{
+	display:block;
+	background:url("title_right.gif") no-repeat right top;
+	padding:12px 10px 11px 15px;
+	color:#000000;
+}
+/*平铺排列方式大的内容块*/
+.rangecontent{
+	margin:0;padding:3 6 3 12;
+	line-height:1.5em;height:174;
+	border-left:1px solid #d5d4d6;
+	border-right:1px solid #d5d4d6;
+}
+.rangecontent li{
+	list-style-position:outside;list-style-type:none;
+	clear:both;
+}
+.rangecontent li a{
+	float:left;clear:left;display:block;
+}
+/*span主要是用来时间显示*/
+.rangecontent li span{
+	float:right;clear:right;display:block;width:70;
+}
+/*显示图片时，图片的包围框*/
+.rangepic{
+	padding-bottom:3px;line-height:1.6em;
+}
+/*具体图片样式*/
+.rangeimg{
+	float:left;height:62;width:120;margin-right:20;
+}
+.rangebottom{
+	font-weight:bold;
+	background:url("bottom_left.gif") no-repeat left bottom;
+	padding-left:10;
+}
+.rangebottom span{
+	display:block;
+	background:url("bottom_right.gif") no-repeat right bottom;
+	padding:5px 0px 0px 0px;
+	color:#000000;
+}
+/*友情链接,页面下方的少量链接*/
+#yqlink{
+	padding:10 20 0 20;
+	clear:both;
+	background:url("yqlink_bg.gif") repeat-x left bottom;
+}
+.yqlinktitle{
+	border-bottom:1px dashed #b499b7;
+}
+#yqlink ul{
+	margin:0;height:20px;
+	padding:5px 5px 0 5px;
+	list-style:none;
+}
+#yqlink li{
+	display:inline;
+}
+#yqlink li a{
+	display:block;float:left;width:10%;text-align:center;padding:5 0 0;
+}
+/*导航条*/
+#daohang{
+	float:right;
+	margin:5 0 0;
+	width:720;
+	background:url("daohang_left.gif") no-repeat left top;
+}
+#daohang span{
+	margin-left:18px;
+	display:block;
+	padding:8 0 8 0;
+	background:url("daohang_right.gif") no-repeat right top;
+}
+/*非首页主体侧面*/
+#listside{
+	float:left;
+	width:230;
+	margin:0 5 5 0;
+}
+/*非首页主体大的内容块*/
+#listcontent{
+	float:right;
+	clear:right;
+	padding:40 0 30;
+	width:720;
+	margin:5 0;
+}
+/*列表页主体内容显示*/
+.showlist{
+	line-height:1.2em;
+	margin:2 60 2 60;
+	padding:10 12 2;
+	border-bottom:dashed 1px #d4b9d7;
+}
+/*列表页时间显示样式*/
+.showlisttime{
+	float:right;text-align:right;
+	position:relative; top:-19;
+}
+.listcontent{
+	margin:18 0 5 30;
+	color:555;
+	line-height:1.2em;
+}
+/*页号总体显示样式*/
+.showpage{
+	margin:2 30 2 30;
+	padding:20 10 6;
+	text-align:right;
+}
+/*页号中每个元素的样式*/
+.showpage span{
+	border:1px solid #d4b9d7;
+	padding:2 8 2;
+	color:#f44;
+}
+.showpage a span{
+	color:#000;
+}
+/*内容页显示关键字样式*/
+.benkeyword{
+	font-size:9pt;
+	text-align:right;
+	margin:0 50 10 0;
+}
+/*内容页标题*/
+.bentitle{
+	font-size:24px;
+	text-align:center;
+	margin:2 30 20 30;
+}
+/*内容页标题下面的作者等信息*/
+.beninfo{
+	text-align:center;
+	margin:0 30 10 30;
+	padding:0 0 5;
+	border-bottom:solid 1px #d4b9d7;
+}
+.bentitleimgdiv{
+	float:left;margin-right:30px;
+	border:solid 1px #d4b9d7;padding:10 0;
+	width:310;text-align:center;
+}
+.bentitleimg{
+	width:300px;
+	height:300px;
+	border:0px;margin:0 10;
+}
+/*内容页产品*/
+.benpro{
+	width:300;
+}
+.benproitem{
+	padding:8px;
+}
+.benprohr{
+	border-top:1px solid #c4a9c7;border-bottom:1px solid #eeeeee;padding-top:1px;
+	font-size:1px;
+}
+.benprotitle{
+	font-weight:bold;
+	padding:20 0 10 0;
+}
+/*内容页文章内容*/
+#bencontent{
+	margin:0 30 0 30;
+	padding-top:5;width:660;
+	line-height:1.4em;
+}
+/*上一篇与下一篇*/
+.lastpage{
+	float:left;clear:left;
+	margin-left:20px;
+}
+.nextpage{
+	float:right;clear:right;
+	margin-right:20px;
+	text-align:right;
+}
+.footbar{				 /*网页底部菜单栏*/
+	clear:both;
+	padding:15 5 5;
+	text-align:center;
+}
+.outher{					/*网页底部其它内容*/
+	height:80;
+	text-align:center;
+	padding-top:10px;
+	line-height:1.8em;
+}
+
+
+/*==============================搜索页面相关样式*/
+#searmenu{
+	float:left;
+	padding:10 0 0;
+	font-size:14px;
+	border-bottom:double #d4b9d7;
+}
+#searmenu ul {
+	margin:0;
+	padding:10px 0px 0 0px;
+	list-style:none;
+}
+#searmenu li {
+	display:inline;
+	margin:0;
+	padding:0 1;
+}
+.seartitle{
+	text-align:center;clear:both;height:80;
+	background:url("search.gif") no-repeat 38% 50%;
+	font-size:20px;
+}
+.searform{
+	margin:0 300;
+	line-height:0.5em;
+}
+.searhr{
+	font-size:9pt;
+	padding-left:40px;
+}
+.searcontent{
+	margin:0 10 10 0;
+	float:left;width:690px;
+	border-top:1px solid #d4b9d7;
+}
+.sresult{
+	padding:10 0 5 0;
+}
+.sresulttitle{
+	font-weight:bold;
+	padding:5 20 5 0;
+}
+.sresultcon{
+	padding:3 20 10 40;
+	color:#444;
+}
+.searside{
+	width:250;float:right;
+	margin:0 0 10;
+}
+.searchbar{
+	padding:1;
+	position:absolute;
+	right:450px;
+	top:3px;
+}
+/*注册页面相关样式*/
+.reg-treaty-title{
+	font-weight:bold;
+	margin:0 40;padding:10 5 5;
+}
+/*注册协议条约*/
+.reg-treaty{
+	line-height:2em;
+	margin:0 38;padding:5;
+	list-style:inside;
+	border:1px solid #d4b9d7;
+}
+.guesttitle{
+	margin:5 50;padding:10 30 5 0;
+	font-weight:bold;border-bottom:1px #d4b9d7 dashed;
+}
+.guestlist{
+	margin:5 50;padding:10 0 5 0;
+	border-bottom:1px #d4b9d7 dashed;
+}
+.glistinfo{
+	background-color:#DDD;
+	padding:5px;
+}
+.glistinfo span{
+	padding-right:30px;
+}
+.glistcontent{
+	padding:5 10;
+}
+.glistreply{
+	border-top:1px dashed #eee;
+	padding:5 0 10 10;
+}
+.guestform{
+	margin:0 50;padding:0 30 30 30;
+}
+.guestform2{
+	padding:3 0 3 40;
+	border-left:1px solid #d5d4d6;
+	border-right:1px solid #d5d4d6;
+}
+/*友情链接页面专用*/
+.yqlinkpagetitle{
+	padding:20 0 0 30;
+	border-bottom:1px dashed #b499b7;
+}
+.yqlinkpage{
+	padding:0 20 40 20;
+	clear:both;
+}
+.yqlinkpage ul{
+	margin:0;height:20px;
+	padding:5px 5px 0 5px;
+	list-style:none;
+}
+.yqlinkpage li{
+	display:inline;
+}
+.yqlinkpage li a{
+	display:block;float:left;width:10%;text-align:center;padding:5 0 0;
+}

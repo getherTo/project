@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery/jquery.js"></script>
+
+</head>
+<body>
+<h1>jquery ajax 练习</h1>
+<div id="content">
+</div>
+<input type="text" name="name" id="name" value="">
+<button type="button" id="btn">显示指定英雄</button>
+<script type="text/javascript">
+    $("#btn").click(function(){
+        $.ajax({
+            type: "GET", // 发送请求的方式 GET 或 POST
+            url: "1.php", // 请求的php地址
+            data: {name: $("#name").val()}, // 发送的参数
+            success:function( html) {  // html为请求的php文件返回的内容
+                $('#content').prepend(html);
+            }
+        });
+    });
+</script>
+</body>
+</html>

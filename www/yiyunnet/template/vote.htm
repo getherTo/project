@@ -1,0 +1,59 @@
+<!--
+<?php
+echo <<<EOT
+-->
+
+<div id="body">
+	<div id="daohang"><span>{$web['daohang']}</span></div>
+	<div id="listside">
+		<div id="login">
+			{$logincode}
+			<div class="bottom"><span></span></div>
+		</div>
+		<div class="sideblock">{$showvotecode}</div>
+	</div>
+	<div id="listcontent">
+<!--
+EOT;
+if($id!=0){
+echo <<<EOT
+-->
+		<table width="100%" cellpadding="0" border="0">
+			<tr height="30"><th colspan="2">{$votename}</th></tr>
+			<tr height="30"><th colspan="2">{$voteabout}</th></tr>
+			<tr>
+				<td height="50" width="180" align="right">{$voteoptions[0]['voteoption']}</td>
+				<td rowspan="{$records}"><img src="voteimg.php?id={$id}&width=500"></td>
+			</tr>
+<!--
+EOT;
+for($i=1;$i<$records;$i++)
+echo <<<EOT
+-->
+			<tr>
+				<td height="50" align="right">{$voteoptions[$i]['voteoption']}</td>
+			</tr>
+<!--
+EOT;
+echo <<<EOT
+-->
+		</table>
+<!--
+EOT;
+}else
+echo <<<EOT
+-->
+		{$showlist}
+		<div class="showpage">{$showpage}</div>
+<!--
+EOT;
+echo <<<EOT
+-->
+	</div>
+	<div class="bodybottom"></div>
+</div>
+
+<!--
+EOT;
+?>
+-->

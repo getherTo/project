@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form name="form1" action="" method="post">
+    用户名：<input type="text" value="bbb" id="user_name" name="user_name"><br>
+    Email：<input type="text" value="zpf@126.com" id="email" name="email">
+    手机：<input type="text" value="18556522728" id="mobile"  name="mobile">
+</form>
+<script>
+    var user_name = document.getElementById("user_name").value;
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    document.write("<hr>");
+    document.write("用户名：" + user_name);
+    document.write("<br>");
+    document.write("Email：" +email);
+    document.write("<br>");
+    document.write("手机：" +mobile);
+    document.getElementById("user_name").style.border = "1px solid red";
+    document.getElementById("email").style.border = "1px solid red";
+    document.getElementById("mobile").style.border = "1px solid red";
+</script>
+</body>
+</html>
